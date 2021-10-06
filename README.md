@@ -11,7 +11,7 @@ Send to: llvm@lists.linux.dev
 - [Meetup in Oct](https://www.eventbrite.com/e/bay-area-llvm-developers-meetup-tickets-173682136947)
 - (Nick): Working on https://github.com/ClangBuiltLinux/linux/issues/1302 in LLVM.
 - BLK_DEV_NBD issue all resolved https://github.com/ClangBuiltLinux/linux/issues/1438
-- (Serge, Nick): small fixes for inline https://goto.google.com/llvm-cr/D111009, https://goto.google.com/llvm-cr/D107872
+- (Serge, Nick): small fixes for inline https://reviews.llvm.org/D111009, https://reviews.llvm.org/D107872
 - Collabora blog post on glibc+llvm:
   - https://www.collabora.com/news-and-blog/blog/2021/09/30/a-tale-of-two-toolchains-and-glibc/
   - "Glibc built by LLVM should be achievable if we consider the successful effort to add first-class Clang support to the Linux kernel which is also a complex and historically tied-to GCC project." "Even without a big concentrated effort like the Linux kernel had..."
