@@ -8,7 +8,7 @@ Send to: llvm@lists.linux.dev
 
 ## Oct 6, 2021
 - Meeting notes moved to github
-- Meetup in Oct
+- [Meetup in Oct](https://www.eventbrite.com/e/bay-area-llvm-developers-meetup-tickets-173682136947)
 - (Nick): Working on https://github.com/ClangBuiltLinux/linux/issues/1302 in LLVM.
 - BLK_DEV_NBD issue all resolved https://github.com/ClangBuiltLinux/linux/issues/1438
 - (Serge, Nick): small fixes for inline https://goto.google.com/llvm-cr/D111009, https://goto.google.com/llvm-cr/D107872
