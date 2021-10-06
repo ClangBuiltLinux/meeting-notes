@@ -6,6 +6,38 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Oct 6, 2021
+- Meeting notes moved to github
+- Meetup in Oct
+- (Nick): Working on https://github.com/ClangBuiltLinux/linux/issues/1302 in LLVM.
+- BLK_DEV_NBD issue all resolved https://github.com/ClangBuiltLinux/linux/issues/1438
+- (Serge, Nick): small fixes for inline https://goto.google.com/llvm-cr/D111009, https://goto.google.com/llvm-cr/D107872
+- Collabora blog post on glibc+llvm:
+  - https://www.collabora.com/news-and-blog/blog/2021/09/30/a-tale-of-two-toolchains-and-glibc/
+  - "Glibc built by LLVM should be achievable if we consider the successful effort to add first-class Clang support to the Linux kernel which is also a complex and historically tied-to GCC project." "Even without a big concentrated effort like the Linux kernel had..."
+  - https://sourceware.org/bugzilla/show_bug.cgi?id=28376
+- (Nick) thumb2 boot failure in qemu 6.1.0+ fix: https://lore.kernel.org/llvm/20210929190810.1597399-1-ndesaulniers@google.com/
+- (Kees, Nathan) CI problem matcher updates:
+  - https://github.com/ClangBuiltLinux/continuous-integration2/pull/211
+  - https://github.com/ClangBuiltLinux/continuous-integration2/pull/215
+- exponential backoff
+- (Sami) CFI x86 v4: https://lore.kernel.org/lkml/20210930180531.1190642-1-samitolvanen@google.com/
+- kselftests broken
+- muloti4
+  - should disable for linux (not android, cros?) and windows (not cygwin)
+  - https://bugs.llvm.org/show_bug.cgi?id=52043
+- -Wframe-larger-than= discussion
+  - why does GCC use less stack than Clang with the same KASAN features enabled?
+  - dynamic tools team saying not a bug
+  - Can we limit inlining for kasan?
+  - Can we disable -Wframe-larger-than= for KASAN_STACK?
+  - Minimize the warnings from allmodconfig/allyesconfig
+  - Avoiding disabling KASAN_STACK w/ clang.
+  - Too much padding between objects in KASAN_STACK w/ clang?
+  - Can we tune the inline cost model for KASAN (not ASAN)?
+  - TBD next week; Arnd to pull a few interesting use cases (very high stack useage) from all\*configs, Marco, Glider, and Nick to analyzer a few individual cases.
+
+
 ## Sep 22, 2021
 Bill describing difficulties in implementation of zeroing callee used regs.
 Plumbers (Toolchain MC Friday)
