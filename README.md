@@ -6,6 +6,28 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Oct 20, 2021
+- Lots of patches around `-Wbitwise-instead-of-logical`, Linus not thrilled with note diagnostic.
+- (Nick) [eliminated](https://lore.kernel.org/lkml/20211019223646.1146945-2-ndesaulniers@google.com/) CROSS_COMPILE_COMPAT for LLVM=1 arm64 compat vdso.
+- (Serge) [fix](https://reviews.llvm.org/D112059) for [LTO+FORTIFY](https://github.com/ClangBuiltLinux/linux/issues/1477).
+- arm64 `.cfi_negate_ra_state`+PAC [LLVM patch](https://reviews.llvm.org/D111780).
+- (Nick) thinLTO+CFI .cfi_jt fixup [LLVM patch](https://reviews.llvm.org/D107934).
+- (Ard) arm32 [IRQ stacks](https://lore.kernel.org/linux-arm-kernel/20211017131723.4034662-1-ardb@kernel.org/) and [vmapped stacks](https://lore.kernel.org/linux-arm-kernel/20211018141615.682070-1-ardb@kernel.org/).
+  - regression in next `__eabi_read_tb`
+- (Nick) working on [propagating tail calls](https://reviews.llvm.org/D107872) for fortify.
+- 32b [unwinder fixes](https://lore.kernel.org/linux-arm-kernel/163369614818.636038.5019945597127474028.stgit@devnote2/) for kprobes.
+- (Miguel) [mark](https://lore.kernel.org/lkml/20211014132331.GA4811@kernel.org/) `__compiletime_assert` `noreturn`.
+- [MPE](https://lore.kernel.org/linuxppc-dev/20211014024424.528848-1-mpe@ellerman.id.au/) and Nemanjai looking into LLVM_IAS=1 for ppc.
+- (Rasmus) [switch container_of from BUILD_BUG_ON to static_assert](https://lore.kernel.org/lkml/20211015090530.2774079-1-linux@rasmusvillemoes.dk/).
+- kasan excessive stack useage, [interesting case](https://godbolt.org/z/P3qb4nGYe) fron Arnd.
+  - `-fno-sanitize-address-use-after-scope` and `-fsanitize-address-use-after-return=never` (gcc's `--param asan-use-after-return=1`)
+  - large padding for small locals?
+- LLVM bay area meetup tonight. 5pm CBL round table.
+  - ppc & s390 assembler, kasan stack useage, ARC + m68k
+- atom cpu tuning is bad; leads to frequent register exhaustion. (TODO: Nick, talk to Intel): https://github.com/ClangBuiltLinux/linux/issues/1483
+- rust tentative clang flags removed from rustforlinux kbuild modifications
+- https://github.com/ClangBuiltLinux/linux/issues/1315: argument unused during compilation: '-march=armv6k' #1315
+
 ## Oct 6, 2021
 - Meeting notes moved to github
 - [Meetup in Oct](https://www.eventbrite.com/e/bay-area-llvm-developers-meetup-tickets-173682136947)
