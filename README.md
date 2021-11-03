@@ -6,6 +6,21 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Nov 3, 2021
+- (Serge) [LTO+FORTIFY](https://github.com/ClangBuiltLinux/linux/issues/1477) [fix](https://reviews.llvm.org/D112059) has landed in LLVM.
+- [GCC SCS aarch64 WIP](https://lore.kernel.org/linux-hardening/20211102075812.122715-1-ashimida@linux.alibaba.com/)
+- (Ard) Working on 32b ARM per task stack canaries [0](https://reviews.llvm.org/D112600), [1](https://reviews.llvm.org/D112811), [2](https://reviews.llvm.org/D113026), [3](https://reviews.llvm.org/D112768), [3](https://lore.kernel.org/linux-arm-kernel/20211028083527.1057158-1-ardb@kernel.org/).
+- (Phoebe) x86 llvm patches for [-mno-fp-ret-in-387](https://reviews.llvm.org/D112143), [-mskip-rax-setup](https://reviews.llvm.org/D112413), and [-maccumulate_outgoing_args](https://reviews.llvm.org/D112415).
+- Removing CROSS_COMPILE_COMPAT causing issues for Linaro TCWG CI since they disable 32b arm support in llvm for their 64b arm kernel builds.
+  - `clang -print-targets`
+- Met with Nemanja and Sean at IBM regarding PPC. MPE@ couldn't make it this week, but perhaps next time due to timezone changes in AU.  MPE mentions via IRC "we're a bit wedged on the EFLv2 ppc64be thing, because the gcc/binutils folks *don't* support it"
+- Met with Intel
+  - Need to find out more about [SLS](https://meet.google.com/yjf-jyqk-iaz?authuser=0#:~:text=https%3A//www.phoronix.com/scan.php%3Fpage%3Dnews_item%26px%3DStraight-Line-Speculation-x86) 
+- LLVM Bay Area meetup went well. Nick presented about CBL; mostly folks unaware of the project asking basic questions.
+  - LLVM meetup coming up in two weeks, register now
+- Android specific perf tests? Binder throughput tests.
+- CFI redesign x86 questions on LKML / Aarch64 static calls blocked by CFI issue related to asm labels on declarations in C.
+
 ## Oct 20, 2021
 - Lots of patches around `-Wbitwise-instead-of-logical`, Linus not thrilled with note diagnostic.
 - (Nick) [eliminated](https://lore.kernel.org/lkml/20211019223646.1146945-2-ndesaulniers@google.com/) CROSS_COMPILE_COMPAT for LLVM=1 arm64 compat vdso.
