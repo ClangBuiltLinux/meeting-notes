@@ -15,7 +15,7 @@ Send to: llvm@lists.linux.dev
   - `clang -print-targets`
 - Met with Nemanja and Sean at IBM regarding PPC. MPE@ couldn't make it this week, but perhaps next time due to timezone changes in AU.  MPE mentions via IRC "we're a bit wedged on the EFLv2 ppc64be thing, because the gcc/binutils folks *don't* support it"
 - Met with Intel
-  - Need to find out more about [SLS](https://meet.google.com/yjf-jyqk-iaz?authuser=0#:~:text=https%3A//www.phoronix.com/scan.php%3Fpage%3Dnews_item%26px%3DStraight-Line-Speculation-x86) 
+  - Need to find out more about [SLS](https://www.phoronix.com/scan.php?page=news_item&px=Straight-Line-Speculation-x86) 
 - LLVM Bay Area meetup went well. Nick presented about CBL; mostly folks unaware of the project asking basic questions.
   - LLVM meetup coming up in two weeks, register now
 - Android specific perf tests? Binder throughput tests.
