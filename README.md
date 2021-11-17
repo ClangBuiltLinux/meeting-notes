@@ -6,6 +6,23 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Nov 17, 2021
+- (Maz) [CFI breakage](https://github.com/ClangBuiltLinux/linux/issues/1503)
+- (Nathan) [Long double literals](https://github.com/ClangBuiltLinux/linux/issues/1497)
+- [Time to upgrade to clang-11?](https://github.com/ClangBuiltLinux/linux/issues/1506)
+  - https://github.com/ClangBuiltLinux/misc-scripts 
+- (Nick) [patch for armv6 hard thread pointer](https://github.com/ClangBuiltLinux/linux/issues/1502)
+- (Nathan) linux-5.15.y [CI coverage wired up](https://github.com/ClangBuiltLinux/continuous-integration2/pull/240)
+- (Phoebe) [-mno-fp-ret-in-387](https://reviews.llvm.org/D112143), [-mskip-rax-setup](https://reviews.llvm.org/D112413)
+- (Ulrich) commented on open s390 LLVM_IAS=1 bugs, Ilie sent [a patch](https://lore.kernel.org/lkml/20211117174822.3632412-1-ilie.halip@gmail.com/)
+- (Anders) has been sending patches fixing warnings from the kselftests
+- Interesting thread: [RFC: adding support to GCC for detecting trust boundaries](https://lore.kernel.org/linux-toolchains/20211113203732.2098220-1-dmalcolm@redhat.com/)
+- [LLVM dev meeting](https://llvm.swoogo.com/2021devmtg/)
+- (Arnd) mentioned build time regression on IRC
+- Sami's x86_64 mainline CFI branch red
+  - https://git.kernel.org/linus/2105a92748e83e2e3ee6be539da959706bbb3898
+- (Tom) BUILD_BUG -> \_Static_assert and typeof(x) -> \_\_auto_type clang-tidy
+
 ## Nov 3, 2021
 - (Serge) [LTO+FORTIFY](https://github.com/ClangBuiltLinux/linux/issues/1477) [fix](https://reviews.llvm.org/D112059) has landed in LLVM.
 - [GCC SCS aarch64 WIP](https://lore.kernel.org/linux-hardening/20211102075812.122715-1-ashimida@linux.alibaba.com/)
