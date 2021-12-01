@@ -6,6 +6,15 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Dec 1, 2021
+- (Nathan) [Reducing an LTO Linux kernel bug with cvise](https://nathanchance.dev/posts/cvise-lto-kernel-bug/)
+- (Nathan) [raise llvm min version to 11](https://lore.kernel.org/llvm/20211129165803.470795-2-nathan@kernel.org/)
+- (Bill) [asm goto -Wunitialized](https://github.com/ClangBuiltLinux/linux/issues/1521) - [fix](https://reviews.llvm.org/D69868)
+- (Nick) [asm goto w/ outputs breakage with "+r" constraints](https://github.com/ClangBuiltLinux/linux/issues/1512) - [fix](https://reviews.llvm.org/D114895)
+- (Nick) [arm32 stack guard CrOS test failure](https://bugs.chromium.org/p/chromium/issues/detail?id=1270361) - [fix](https://reviews.llvm.org/D114762)
+- (Phoebe) [re-enabling float/double support even for -mno-x87](https://goto.google.com/llvm-cr/D114162)
+- [LTO breakage with .macro redefinitions](https://github.com/ClangBuiltLinux/linux/issues/1513)
+
 ## Nov 17, 2021
 - (Maz) [CFI breakage](https://github.com/ClangBuiltLinux/linux/issues/1503)
 - (Nathan) [Long double literals](https://github.com/ClangBuiltLinux/linux/issues/1497)
