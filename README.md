@@ -12,7 +12,7 @@ Send to: llvm@lists.linux.dev
 - (Bill) [asm goto -Wunitialized](https://github.com/ClangBuiltLinux/linux/issues/1521) - [fix](https://reviews.llvm.org/D69868)
 - (Nick) [asm goto w/ outputs breakage with "+r" constraints](https://github.com/ClangBuiltLinux/linux/issues/1512) - [fix](https://reviews.llvm.org/D114895)
 - (Nick) [arm32 stack guard CrOS test failure](https://bugs.chromium.org/p/chromium/issues/detail?id=1270361) - [fix](https://reviews.llvm.org/D114762)
-- (Phoebe) [re-enabling float/double support even for -mno-x87](https://goto.google.com/llvm-cr/D114162)
+- (Phoebe) [re-enabling float/double support even for -mno-x87](https://reviews.llvm.org/D114162)
 - [LTO breakage with .macro redefinitions](https://github.com/ClangBuiltLinux/linux/issues/1513)
 
 ## Nov 17, 2021
