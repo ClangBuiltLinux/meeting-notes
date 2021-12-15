@@ -6,6 +6,34 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Dec 15, 2021
+- LLVM issue tracker has moved from [bugzilla](https://bugs.llvm.org/) to [github](https://github.com/llvm/llvm-project/issues)
+  -  [kernel meta bug](https://github.com/llvm/llvm-project/issues/4440)
+  -  Issue numbers aren't 1:1
+    -  You can visit llvm.org/PRXXXX where XXXX is the OLD PR number to get redirected to the new github issue number, ie. [llvm.org/PR4068](https://llvm.org/PR4068)
+  - We should:
+    - update [our bug tracker](https://github.com/ClangBuiltLinux/linux/issues) links
+    - update [links in kernel source](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/)
+    - update [links in LLVM source](https://github.com/llvm/llvm-project)
+- (Nathan) [LTO breakage with .macro redefinitions](https://github.com/ClangBuiltLinux/linux/issues/1513) [fixed](https://lore.kernel.org/lkml/20211210234953.3420108-1-nathan@kernel.org/)
+- (Nathan) [Change TuxSuite targets](https://github.com/ClangBuiltLinux/continuous-integration2/pull/256)
+- [MIPS LTO support](https://lore.kernel.org/lkml/20211213224914.1501303-1-paul@crapouillou.net/)
+  - Asks about ARCH=arm LTO
+- [whole bunch of new mips bugs filed recently](https://github.com/ClangBuiltLinux/linux/issues?q=is%3Aissue+is%3Aopen+label%3A%22%5BARCH%5D+mips%22)
+- (Marco) [`-ftrivial-auto-var-init=` and allocas](https://reviews.llvm.org/D115440)
+- (Kees) [deprecating -fsanitize=object-size](https://lore.kernel.org/r/20211203235346.110809-1-keescook@chromium.org/)
+- (Nick) [asm goto w/ outputs breakage with "+r" constraints](https://github.com/ClangBuiltLinux/linux/issues/1512) - [fix updated](https://reviews.llvm.org/D115688)
+  - Probably going to look at https://github.com/ClangBuiltLinux/linux/issues/1439 next.
+- (Nick) Android work
+  - Upgrading kernel toolchain
+  - minimizing `make` invocation for Android T
+  - VTS tests
+  - u-boot 32b ARM+LLD
+- [RISC-V relocation R_RISCV_HI20 out of range with CONFIG_CMODEL_MEDLOW=y](https://github.com/ClangBuiltLinux/linux/issues/1533)
+- (Arnd) unaligned access (siphash?) (Ard has a draft reply) `CONFIG_UBSAN_ALIGNMENT`+`HAVE_EFFICIENT_UNALIGNED_ACCESS`
+- (Arnd) header file dependencies - Linus had feedback
+- [interesting glibc abi project](https://github.com/ziglang/glibc-abi-tool)
+
 ## Dec 1, 2021
 - (Nathan) [Reducing an LTO Linux kernel bug with cvise](https://nathanchance.dev/posts/cvise-lto-kernel-bug/)
 - (Nathan) [raise llvm min version to 11](https://lore.kernel.org/llvm/20211129165803.470795-2-nathan@kernel.org/)
