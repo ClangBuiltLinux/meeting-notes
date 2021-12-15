@@ -7,6 +7,9 @@ invite and meet link.
 Send to: llvm@lists.linux.dev
 
 ## Dec 15, 2021
+- GKH stopped by to say hello
+  - ARCH=arm allmodconfig warnings making it difficult to enable CONFIG_WERROR
+  - https://github.com/ClangBuiltLinux/linux/issues/496
 - LLVM issue tracker has moved from [bugzilla](https://bugs.llvm.org/) to [github](https://github.com/llvm/llvm-project/issues)
   -  [kernel meta bug](https://github.com/llvm/llvm-project/issues/4440)
   -  Issue numbers aren't 1:1
@@ -33,6 +36,7 @@ Send to: llvm@lists.linux.dev
 - (Arnd) unaligned access (siphash?) (Ard has a draft reply) `CONFIG_UBSAN_ALIGNMENT`+`HAVE_EFFICIENT_UNALIGNED_ACCESS`
 - (Arnd) header file dependencies - Linus had feedback
 - [interesting glibc abi project](https://github.com/ziglang/glibc-abi-tool)
+  - reminiscent of [tendra](http://www.tendra.org/)?
 
 ## Dec 1, 2021
 - (Nathan) [Reducing an LTO Linux kernel bug with cvise](https://nathanchance.dev/posts/cvise-lto-kernel-bug/)
