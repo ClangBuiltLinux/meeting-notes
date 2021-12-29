@@ -6,6 +6,29 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Dec 29, 2021
+- probably will be an -rc8 release to delay 5.16 until after new years.
+- (Alexey) ARCH=powerpc LLVM_IAS=1 [patches](https://lore.kernel.org/llvm/20211221055904.555763-1-aik@ozlabs.ru/)
+- (Ard) [XOR_NEON](https://github.com/ClangBuiltLinux/linux/issues/496) fixes in the works (marking parameters as `__restrict`)
+- (Ard) [out of range fixup](https://github.com/ClangBuiltLinux/linux/issues/1551)
+- (Nathan) [clang fix for -mno-outline-atomics](https://reviews.llvm.org/D116128)
+- (Nathan) updated bugzilla links to github
+- (Nathan) [Adding Links to Issues](https://github.com/ClangBuiltLinux/linux/wiki/Adding-links-to-issues)
+- (Nick) asm goto fixes
+  - https://reviews.llvm.org/D115688
+  - https://reviews.llvm.org/D115410
+  - https://reviews.llvm.org/D115311
+  - https://reviews.llvm.org/D115471
+  - https://reviews.llvm.org/D116059
+- a few new LTO bugs filed
+  - https://github.com/ClangBuiltLinux/linux/issues/1559
+  - https://github.com/ClangBuiltLinux/linux/issues/1556
+  - https://github.com/ClangBuiltLinux/linux/issues/1554
+  - https://github.com/ClangBuiltLinux/linux/issues/1550
+- (Bill) [builtin eflags](https://lore.kernel.org/llvm/20211229021258.176670-1-morbo@google.com/)
+- hyperv tickling https://github.com/ClangBuiltLinux/linux/issues/92#issuecomment-998099643.
+- (Nathan) playing with containers for boot testing
+
 ## Dec 15, 2021
 - GKH stopped by to say hello
   - ARCH=arm allmodconfig warnings making it difficult to enable CONFIG_WERROR
