@@ -6,6 +6,21 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Jan 12, 2022
+- (Nick) [asm goto fixes](https://github.com/llvm/llvm-project/commits?author=nickdesaulniers&since=2022-01-01&until=2022-01-15)
+- [issue](https://github.com/ClangBuiltLinux/linux/issues/1566) reported with asm volatile?
+  - maybe the same issue as [this](https://github.com/ClangBuiltLinux/linux/issues/1483) or [this](https://github.com/ClangBuiltLinux/linux/issues/679#issuecomment-910865782)/[this](https://github.com/ClangBuiltLinux/linux/issues/621)
+- [no_stack_protector + always_inline changing](https://reviews.llvm.org/D116589), likely to resurface issues with LTO + suspend/resume
+- \__attribute__(deallocator) [clang feature request](https://github.com/llvm/llvm-project/issues/53152)
+- Need to focus on [global warnings](https://github.com/ClangBuiltLinux/linux/issues/92) again
+- LLD feature request for "pass through" of sections for -ffunction-sections -fdata-sections
+  - Should be filed as a feature request to gnu binutils
+    - [Done](https://sourceware.org/bugzilla/show_bug.cgi?id=28772)
+  - https://maskray.me/blog/2020-11-15-explain-gnu-linker-options#z-unique-symbol
+- Ingo's fast header series
+  - `-dM with -E` together or differenced? 
+- Linux Conf AU coming up, see [Kees' talk](https://linux.conf.au/schedule/presentation/27/)
+
 ## Dec 29, 2021
 - probably will be an -rc8 release to delay 5.16 until after new years.
 - (Alexey) ARCH=powerpc LLVM_IAS=1 [patches](https://lore.kernel.org/llvm/20211221055904.555763-1-aik@ozlabs.ru/)
