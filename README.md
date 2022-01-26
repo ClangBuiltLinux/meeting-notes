@@ -6,6 +6,21 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Jan 26, 2022
+- (Ard) [fixups](https://lore.kernel.org/linux-arm-kernel/20220125153656.1802079-1-ardb@kernel.org/) for ARCH=arm ftrace
+- (Nick) focused on [objtool warnings](https://github.com/ClangBuiltLinux/linux/issues/1566) regarding `asm volatile`
+  - Probably going to add -Wasm-volatile to warn when `volatile` does nothing (ie. `asm goto` or no outputs)
+- Met with Intel to discuss kernel IBT, PeterZ has [patches](https://git.kernel.org/pub/scm/linux/kernel/git/peterz/queue.git/log/?h=x86/wip.ibt)
+- (Sami) working on ["kcfi"](https://github.com/samitolvanen/llvm-project/commits/kcfi)
+- CFI [issue reported](https://github.com/ClangBuiltLinux/linux/issues/1567) with blake2s
+- issue with [false positive warnings on globals](https://github.com/ClangBuiltLinux/linux/issues/92) coming up again.
+- sysroot
+- arnd header cleanup randconfigs for ARCH=arm ARCH=arm64 1.7x speedup with clang
+- [clang noundef analysis](https://github.com/ClangBuiltLinux/linux/issues/1480)
+- CrOS analysing [most used headers](https://commondatastorage.googleapis.com/chromium-browser-clang/llvm_includes-index.html) in LLVM
+- Kees' [LCA talk](https://www.youtube.com/watch?v=17Nqwl30Ch0)
+- [`-Wshorten-64-to-32`](https://twitter.com/kees_cook/status/1485757844322340864)
+
 ## Jan 12, 2022
 - (Nick) [asm goto fixes](https://github.com/llvm/llvm-project/commits?author=nickdesaulniers&since=2022-01-01&until=2022-01-15)
 - [issue](https://github.com/ClangBuiltLinux/linux/issues/1566) reported with asm volatile?
