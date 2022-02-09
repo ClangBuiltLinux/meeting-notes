@@ -6,6 +6,25 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Feb 9, 2022
+- (Kees) FORTIFY_SOURCE [clang patches](https://lore.kernel.org/llvm/20220208225350.1331628-1-keescook@chromium.org/)
+  - (Nick) ARCH=i386 [kinda depends on](https://github.com/ClangBuiltLinux/linux/issues/1583) `-ffreestanding` atm 
+- (Sami) kCFI clang [patch posted](https://reviews.llvm.org/D119296)
+ - TODO: llvm patches for x86 Ibt
+- (Nathan) has good summaries for enabling CONFIG_WERROR for [arm64](https://github.com/ClangBuiltLinux/continuous-integration2/issues/246#issuecomment-1033048610) and [x86](https://github.com/ClangBuiltLinux/continuous-integration2/issues/245#issuecomment-1033100464)
+  - in particular [DMA_BIT_MASK](https://git.kernel.org/pub/scm/linux/kernel/git/hyperv/linux.git/commit/?id=6bf625a4140f24b490766043b307f8252519578b) patch kind of deprioritizes https://github.com/ClangBuiltLinux/linux/issues/92 again.
+- (Bill) landed [initial support](https://reviews.llvm.org/D110869) for `-fzero-call-used-regs` [option](https://github.com/ClangBuiltLinux/linux/issues/20)
+- (Nick) [a fix](https://git.kernel.org/pub/scm/linux/kernel/git/jpoimboe/linux.git/commit/?h=objtool/urgent&id=bfb1a7c91fb7758273b4a8d735313d9cc388b502) for objtool warnings for configs that set `-march`
+- (Nick) rebased [eflags patch](https://reviews.llvm.org/D92695), still don't really understand redzone concerns.
+- (Nick) chasing [a clang-14+ objtool warning](https://github.com/ClangBuiltLinux/linux/issues/1563)
+- [ppc lld boot regression](https://github.com/ClangBuiltLinux/linux/issues/1581)
+- ideas for intern project?
+- meetup?
+- (Arnd) -ffreestanding per arch may have just needed to be on lib/string.h (only 4 are x86, mips, xtensa, m68k)
+  - mips mentions something in additon to string.h functions 
+- (Arnd) 10% build time improvement by making atomics extern functions rather than macros
+- plumbers 2022 will be in Dublin, [uConf CFP is open](https://lpc.events/event/16/abstracts/)
+
 ## Jan 26, 2022
 - (Ard) [fixups](https://lore.kernel.org/linux-arm-kernel/20220125153656.1802079-1-ardb@kernel.org/) for ARCH=arm ftrace
 - (Nick) focused on [objtool warnings](https://github.com/ClangBuiltLinux/linux/issues/1566) regarding `asm volatile`
