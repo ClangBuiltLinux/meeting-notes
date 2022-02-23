@@ -6,6 +6,18 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Feb 23, 2022
+
+- [`(NOLOAD)` error/warning](https://github.com/ClangBuiltLinux/linux/issues/1597)
+- [`__alloc_size(1)` issue with `__kmalloc_track_caller`](https://github.com/ClangBuiltLinux/linux/issues/1599)
+- NULL pointer dereference in `net/core/rtnetlink.c`:
+  - [Upstream thread](https://lore.kernel.org/r/Yg2h2Q2vXFkkLGTh@dev-arch.archlinux-ax161/)
+  - [CBL issue](https://github.com/ClangBuiltLinux/linux/issues/1594)
+- Continuous integration [now supports `clang-14`](https://github.com/ClangBuiltLinux/continuous-integration2/pull/304) after [workflow split](https://github.com/ClangBuiltLinux/continuous-integration2/pull/302)
+- [Support for `ARCH=um`](https://lore.kernel.org/r/20220217002843.2312603-1-keescook@chromium.org/)
+- [Mitigating kernel risks on 32-bit ARM](https://security.googleblog.com/2022/02/mitigating-kernel-risks-on-32-bit-arm.html)
+- [GCC warnings with `-std=gnu11`](https://lore.kernel.org/r/CAHk-=wgLe-OSLTEHm=V7eRG6Fcr0dpAM1ZRV1a=R_g6pBOr8Bg@mail.gmail.com/), [clang does not warn](https://github.com/llvm/llvm-project/commit/59802321785b4b9fc31b10456c62ba3a06d3a631) due to `-fno-strict-overflow`, which implies `-fwrapv`, which makes signed integer overflow "defined"
+
 ## Feb 9, 2022
 - (Kees) FORTIFY_SOURCE [clang patches](https://lore.kernel.org/llvm/20220208225350.1331628-1-keescook@chromium.org/)
   - (Nick) ARCH=i386 [kinda depends on](https://github.com/ClangBuiltLinux/linux/issues/1583) `-ffreestanding` atm 
