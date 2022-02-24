@@ -218,90 +218,78 @@ Send to: llvm@lists.linux.dev
 
 
 ## Sep 22, 2021
-Bill describing difficulties in implementation of zeroing callee used regs.
-Plumbers (Toolchain MC Friday)
-Almost back to green in CI now that we can apply patch files
-TODO: re-enable -Werror for allmodconfig builds
-Arnd’s randconfig W=1 builds almost green for GCC and Clang
-https://git.kernel.org/pub/scm/linux/kernel/git/arnd/playground.git/log/?h=randconfig-5.15-min 
-Kees had QEMU buffering fixes for ci
-Nick bootstrapping llvm against musl
-https://reviews.llvm.org/D109837
-Try -DLLVM_HOST_TRIPLE=
+  - Bill describing difficulties in implementation of zeroing callee used regs.
+  - Plumbers (Toolchain MC Friday)
+  - Almost back to green in CI now that we can apply patch files
+    - TODO: re-enable -Werror for allmodconfig builds
+    - [Arnd’s randconfig W=1 builds almost green for GCC and Clang](https://git.kernel.org/pub/scm/linux/kernel/git/arnd/playground.git/log/?h=randconfig-5.15-min) 
+    - Kees had QEMU buffering fixes for ci
+  - Nick bootstrapping llvm against musl
+  - https://reviews.llvm.org/D109837
+    - Try -DLLVM_HOST_TRIPLE=
 
 
 ## Sep 8, 2021
-Need attribute error warning kernel fixes to be picked up by Miguel
-https://github.com/ClangBuiltLinux/linux/issues/1173 
-__mulodi4 llvm fixes in, need to do kernel fixes
-https://github.com/ClangBuiltLinux/linux/issues/1438 
-Todo file bug against gcc for mulodi4?
-Switch bit test fixes landed in llvm fixes LTO boot
-https://reviews.llvm.org/rG4331f19d8b9ac8101d55073834b35814afce4e5a 
--Werror
-https://lore.kernel.org/lkml/20210907183843.33028-1-ndesaulniers@google.com/ 
-Sanitizer vs frame-larger-than=
-Stable vs compiler version checks
-TODO Disable WERROR in CI
-LLVM_IAS=1 CROSS_COMPILE landed in mainline
-5.15 merge window open 
-Conf cfps
-Distributors conf: https://github.com/ClangBuiltLinux/llvm-distributors-conf-2021/issues 
-CBL meetup 2: https://github.com/ClangBuiltLinux/CBL-meetup-II-turbo/issues 
-LinuxConfAU extended their deadline: https://linux.conf.au/programme/miniconfs/ 
-LLVM virtual meetup (no BoFs this year, let's do a roundtable?): https://lists.llvm.org/pipermail/llvm-dev/2021-September/152483.html 
-Kasan s390 ci coverage added to our CI
-Nearing Github Actions CI matrix limit
-Kees fortify patches (being split into 2 series)
-New mailing list and IRC
-TODO update mailmap
-llvm@lists.linux.dev
- #clangbuiltlinux on irc.libera.chat
-Sami CFI patches
-https://reviews.llvm.org/D108478
-https://reviews.llvm.org/D108479
-Bill finding shadowing and scev issues (b/198158061) (https://reviews.llvm.org/D104741)
-Talk to Miguel if you’re interested in Rust+kernel
-(Nick) tailcall optimizations for fortified routines: https://reviews.llvm.org/D107872 
+  - [Need attribute error warning kernel fixes to be picked up by Miguel](https://github.com/ClangBuiltLinux/linux/issues/1173)
+  - [__mulodi4 llvm fixes in, need to do kernel fixes](https://github.com/ClangBuiltLinux/linux/issues/1438)
+    - Todo file bug against gcc for mulodi4?
+  - [Switch bit test fixes landed in llvm fixes LTO boot](https://reviews.llvm.org/rG4331f19d8b9ac8101d55073834b35814afce4e5a)
+  - [-Werror](https://lore.kernel.org/lkml/20210907183843.33028-1-ndesaulniers@google.com/)
+  - Sanitizer vs frame-larger-than=
+  - Stable vs compiler version checks
+    - TODO Disable WERROR in CI
+  - LLVM_IAS=1 CROSS_COMPILE landed in mainline
+  - 5.15 merge window open 
+  - Conf cfps
+    - [Distributors conf](https://github.com/ClangBuiltLinux/llvm-distributors-conf-2021/issues)
+    - [CBL meetup 2](https://github.com/ClangBuiltLinux/CBL-meetup-II-turbo/issues)
+    - [LinuxConfAU extended their deadline](https://linux.conf.au/programme/miniconfs/)
+    - [LLVM virtual meetup (no BoFs this year, let's do a roundtable?)](https://lists.llvm.org/pipermail/llvm-dev/2021-September/152483.html)
+  - Kasan s390 ci coverage added to our CI
+    - Nearing Github Actions CI matrix limit
+  - Kees fortify patches (being split into 2 series)
+  - New mailing list and IRC
+    - TODO update mailmap
+    - llvm@lists.linux.dev
+    - #clangbuiltlinux on irc.libera.chat
+  - Sami CFI patches
+    - https://reviews.llvm.org/D108478
+    - https://reviews.llvm.org/D108479
+  - [Bill finding shadowing and scev issues](https://reviews.llvm.org/D104741)
+    - b/198158061 
+  - Talk to Miguel if you’re interested in Rust+kernel
+  - (Nick) [tailcall optimizations for fortified routines](https://reviews.llvm.org/D107872)
 
 ## Aug 25, 2021
-Error+warning attributes landed
-https://reviews.llvm.org/D106030
-30 years of Linux!
-https://lwn.net/Articles/867315/
--Wimplicit-fallthrough for 5.15?
-https://github.com/ClangBuiltLinux/linux/issues/1429
-https://github.com/llvm/llvm-project/commit/9ed4a94d6451046a51ef393cd62f00710820a7e8
-https://lore.kernel.org/r/20210819040517.GA329693@embeddedor/
-ThinLTO regression in LLVM
-https://github.com/ClangBuiltLinux/linux/issues/1440
-https://reviews.llvm.org/D106056
-https://lore.kernel.org/r/5913cdf4-9c8e-38f8-8914-d3b8a3565d73@kernel.org/
-CFI x86_64 v2 series
-https://lore.kernel.org/r/20210823171318.2801096-1-samitolvanen@google.com
-Currently limited to clang-14 but compiler side fix should be going in clang-13.
--falign-jumps=0 warning
-https://lore.kernel.org/r/202108210311.CBtcgoUL-lkp@intel.com/
-https://lore.kernel.org/r/20210824022640.2170859-1-nathan@kernel.org/
-https://lore.kernel.org/r/20210824232237.2085342-1-nathan@kernel.org/
-clang-13 and sanitizer coverage in CI merged
-https://github.com/ClangBuiltLinux/continuous-integration2/pull/178
-https://github.com/ClangBuiltLinux/continuous-integration2/pull/179
-cc-option-yn removal
-https://lore.kernel.org/r/20210817002109.2736222-1-ndesaulniers@google.com/
--Wbool-operation enhancement
-https://reviews.llvm.org/D108003
-PowerPC '-z notext' fix for CONFIG_RELOCATABLE
-https://lore.kernel.org/r/20210812204951.1551782-1-morbo@google.com/
-Getting help from Intel on certain bugs
-https://groups.google.com/g/clang-built-linux/c/fIy6K5Uxr3s/m/vV--Yt78BgAJ
-llvm@lists.linux.dev
-https://subspace.kernel.org/lists.linux.dev.html
-https://subspace.kernel.org/#subscribing
-LTO kbuild patches
-https://lore.kernel.org/lkml/CAK7LNARoxA875uynQHs-HpcfXtzFvuxkzSha9tquR2uV0Za10A@mail.gmail.com/ 
-Fortify source series for 5.15 then 5.16?
-Bill looking into zero call registers
+  - [Error+warning attributes landed](https://reviews.llvm.org/D106030)
+  - [30 years of Linux!](https://lwn.net/Articles/867315/)
+  - -Wimplicit-fallthrough for 5.15?
+    - https://github.com/ClangBuiltLinux/linux/issues/1429
+    - https://github.com/llvm/llvm-project/commit/9ed4a94d6451046a51ef393cd62f00710820a7e8
+    - https://lore.kernel.org/r/20210819040517.GA329693@embeddedor/
+  - ThinLTO regression in LLVM
+    - https://github.com/ClangBuiltLinux/linux/issues/1440
+    - https://reviews.llvm.org/D106056
+    - https://lore.kernel.org/r/5913cdf4-9c8e-38f8-8914-d3b8a3565d73@kernel.org/
+  - [CFI x86_64 v2 series](https://lore.kernel.org/r/20210823171318.2801096-1-samitolvanen@google.com)
+    - Currently limited to clang-14 but compiler side fix should be going in clang-13.
+  - -falign-jumps=0 warning
+    - https://lore.kernel.org/r/202108210311.CBtcgoUL-lkp@intel.com/
+    - https://lore.kernel.org/r/20210824022640.2170859-1-nathan@kernel.org/
+    - https://lore.kernel.org/r/20210824232237.2085342-1-nathan@kernel.org/
+  - clang-13 and sanitizer coverage in CI merged
+    - https://github.com/ClangBuiltLinux/continuous-integration2/pull/178
+    - https://github.com/ClangBuiltLinux/continuous-integration2/pull/179
+  - [cc-option-yn removal](https://lore.kernel.org/r/20210817002109.2736222-1-ndesaulniers@google.com/)
+  - [-Wbool-operation enhancement](https://reviews.llvm.org/D108003)
+  - [PowerPC '-z notext' fix for CONFIG_RELOCATABLE](https://lore.kernel.org/r/20210812204951.1551782-1-morbo@google.com/)
+  - [Getting help from Intel on certain bugs](https://groups.google.com/g/clang-built-linux/c/fIy6K5Uxr3s/m/vV--Yt78BgAJ)
+  - llvm@lists.linux.dev
+    - https://subspace.kernel.org/lists.linux.dev.html
+    - https://subspace.kernel.org/#subscribing
+  - [LTO kbuild patches](https://lore.kernel.org/lkml/CAK7LNARoxA875uynQHs-HpcfXtzFvuxkzSha9tquR2uV0Za10A@mail.gmail.com/) 
+  - Fortify source series for 5.15 then 5.16?
+  - Bill looking into zero call registers
 
 ## Aug 11, 2021
 ARMv4 LLD support discussion `--fix-v4bx`
