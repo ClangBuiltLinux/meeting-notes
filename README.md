@@ -292,133 +292,110 @@ Send to: llvm@lists.linux.dev
   - Bill looking into zero call registers
 
 ## Aug 11, 2021
-ARMv4 LLD support discussion `--fix-v4bx`
-https://bugs.llvm.org/show_bug.cgi?id=51422 
-cc-option-yn necessary?
-https://groups.google.com/g/clang-built-linux/c/PL9lE_eKhhs 
-https://github.com/ClangBuiltLinux/linux/issues/1436 
-https://lore.kernel.org/lkml/20210811175647.3851629-1-ndesaulniers@google.com/ 
-https://lore.kernel.org/lkml/20210810204240.4008685-1-ndesaulniers@google.com/ 
-Blog Posts
-Funded open source security work at the Linux Foundation
-https://linuxfoundation.org/blog/funded-open-source-security-work-at-the-linux-foundation/ 
-Linux Kernel Security Done Right
-https://security.googleblog.com/2021/08/linux-kernel-security-done-right.html 
-Oops! Can’t require LLD for Android R…
-https://android-review.googlesource.com/c/platform/test/vts-testcase/kernel/+/1789650/ 
-Death to CROSS_COMPILE
-https://lore.kernel.org/lkml/20210802183910.1802120-1-ndesaulniers@google.com/ 
-https://github.com/ClangBuiltLinux/linux/issues/1399 
-Death to LLVM_IAS=1
-https://lore.kernel.org/lkml/20210805150102.131008-1-masahiroy@kernel.org/ 
-https://lore.kernel.org/lkml/20210806172701.3993843-1-ndesaulniers@google.com/ 
-https://github.com/ClangBuiltLinux/linux/issues/1434 
-https://github.com/ClangBuiltLinux/continuous-integration2/pull/181 
-__attribute__((error(“”))) __attribute__((warning(“”))) (Nick) for BUILD_BUG and friends
-https://lore.kernel.org/lkml/20210802202326.1817503-1-ndesaulniers@google.com/ 
-https://reviews.llvm.org/D107613 
-https://reviews.llvm.org/D106030 (WIP)
-Distro configs now in CI (Fedora, Suse, Arch)
-https://github.com/ClangBuiltLinux/continuous-integration2/pull/172 
-CFI fix for inline asm references to static functions
-https://reviews.llvm.org/D104058 
-https://github.com/ClangBuiltLinux/linux/issues/1354 
-LLVM13 CI coverage WIP
-https://github.com/ClangBuiltLinux/continuous-integration2/pull/179 
-Sanitizer build+boot CI coverage WIP
-https://github.com/ClangBuiltLinux/continuous-integration2/pull/178 
-CFI remove __typeid__ symbols from JT to aid debugging (Nick)
-ASAN ctor/dtor needed to boot test aarch64
-https://lore.kernel.org/linux-arch/20210731023107.1932981-1-nathan@kernel.org/ 
-__builtin_object_size questions (Kees)
-How to determine if something is a flexible array member?
-int foo [0]; // no size, just a marker/symbol that’s addressable
-int foo []; // flexible array member, malloc + additional size
-Why can’t flex arrays be in union, or alone in anonymous struct?
-https://git.kernel.org/pub/scm/linux/kernel/git/kees/linux.git/commit/?h=kspp/memcpy/next-20210803/v2-devel&id=8725f84346c1be20ccb21aedb3e46f25e3ab9f3a 
-https://git.kernel.org/pub/scm/linux/kernel/git/kees/linux.git/commit/?h=kspp/memcpy/next-20210803/v2-devel&id=0f28d9daf643a1110bc7536f590e60035ba17635 
+  - [ARMv4 LLD support discussion `--fix-v4bx`](https://bugs.llvm.org/show_bug.cgi?id=51422) 
+  - cc-option-yn necessary?
+    - https://groups.google.com/g/clang-built-linux/c/PL9lE_eKhhs 
+    - https://github.com/ClangBuiltLinux/linux/issues/1436 
+    - https://lore.kernel.org/lkml/20210811175647.3851629-1-ndesaulniers@google.com/ 
+    - https://lore.kernel.org/lkml/20210810204240.4008685-1-ndesaulniers@google.com/ 
+  - Blog Posts
+    - [Funded open source security work at the Linux Foundation](https://linuxfoundation.org/blog/funded-open-source-security-work-at-the-linux-foundation/)
+    - [Linux Kernel Security Done Right](https://security.googleblog.com/2021/08/linux-kernel-security-done-right.html) 
+  - [Oops! Can’t require LLD for Android R…](https://android-review.googlesource.com/c/platform/test/vts-testcase/kernel/+/1789650/)
+  - Death to CROSS_COMPILE
+    - https://lore.kernel.org/lkml/20210802183910.1802120-1-ndesaulniers@google.com/ 
+    - https://github.com/ClangBuiltLinux/linux/issues/1399 
+  - Death to LLVM_IAS=1
+    - https://lore.kernel.org/lkml/20210805150102.131008-1-masahiroy@kernel.org/ 
+    - https://lore.kernel.org/lkml/20210806172701.3993843-1-ndesaulniers@google.com/ 
+    - https://github.com/ClangBuiltLinux/linux/issues/1434 
+    - https://github.com/ClangBuiltLinux/continuous-integration2/pull/181 
+  - `__attribute__((error(“”))) __attribute__((warning(“”)))` (Nick) for BUILD_BUG and friends
+    - https://lore.kernel.org/lkml/20210802202326.1817503-1-ndesaulniers@google.com/ 
+    - https://reviews.llvm.org/D107613 
+    - https://reviews.llvm.org/D106030 (WIP)
+  - [Distro configs now in CI (Fedora, Suse, Arch)](https://github.com/ClangBuiltLinux/continuous-integration2/pull/172) 
+  - CFI fix for inline asm references to static functions
+    - https://reviews.llvm.org/D104058 
+    - https://github.com/ClangBuiltLinux/linux/issues/1354 
+  - [LLVM13 CI coverage WIP](https://github.com/ClangBuiltLinux/continuous-integration2/pull/179)
+  - [Sanitizer build+boot CI coverage WIP](https://github.com/ClangBuiltLinux/continuous-integration2/pull/178)
+  - CFI remove `__typeid__` symbols from JT to aid debugging (Nick)
+  - [ASAN ctor/dtor needed to boot test aarch64](https://lore.kernel.org/linux-arch/20210731023107.1932981-1-nathan@kernel.org/)
+  - `__builtin_object_size` questions (Kees)
+    - How to determine if something is a flexible array member?
+      - int foo [0]; // no size, just a marker/symbol that’s addressable
+      - int foo []; // flexible array member, malloc + additional size
+    - Why can’t flex arrays be in union, or alone in anonymous struct?
+      - https://git.kernel.org/pub/scm/linux/kernel/git/kees/linux.git/commit/?h=kspp/memcpy/next-20210803/v2-devel&id=8725f84346c1be20ccb21aedb3e46f25e3ab9f3a 
+      - https://git.kernel.org/pub/scm/linux/kernel/git/kees/linux.git/commit/?h=kspp/memcpy/next-20210803/v2-devel&id=0f28d9daf643a1110bc7536f590e60035ba17635 
 
 ## July 28, 2021
-Fortify Source (Kees)
-https://lore.kernel.org/lkml/20210727205855.411487-1-keescook@chromium.org/ 
-Phoronix benchmarked LTO
-https://www.phoronix.com/scan.php?page=article&item=clang-lto-kernel&num=1 
-Intel 0 day bot now running clang static analyzer continuously
-https://groups.google.com/g/clang-built-linux/c/NY64cegnl8o 
-https://groups.google.com/g/clang-built-linux/c/0Kn8V3wI-Jo 
-RISCV + LTO patches sent
-https://lore.kernel.org/linux-riscv/20210719205339.1023572-1-twd2.me@gmail.com/ 
-https://lore.kernel.org/linux-riscv/20210719205247.1023289-1-twd2.me@gmail.com/ 
-https://lore.kernel.org/linux-riscv/20210719205314.1023455-1-twd2.me@gmail.com/ 
-Attr Error + Warning (Nick) WIP: https://reviews.llvm.org/D106030 
-TODO (Nick): send v3 of CROSS_COMPILE
-TODO (Nick): Nathan had feedback on one patch __error__
-LLVM14 to branch
-Max TCWG IRC libaro #linaro-tcwg on libera.chat
-Static analysis https://lore.kernel.org/ksummit/20210723191023.GG25548@kadam/ 
-Sept 21 tentative clang-13 ship
+  - [Fortify Source (Kees)](https://lore.kernel.org/lkml/20210727205855.411487-1-keescook@chromium.org/)
+  - [Phoronix benchmarked LTO](https://www.phoronix.com/scan.php?page=article&item=clang-lto-kernel&num=1)
+  - Intel 0 day bot now running clang static analyzer continuously
+    - https://groups.google.com/g/clang-built-linux/c/NY64cegnl8o 
+    - https://groups.google.com/g/clang-built-linux/c/0Kn8V3wI-Jo 
+  - RISCV + LTO patches sent
+    - https://lore.kernel.org/linux-riscv/20210719205339.1023572-1-twd2.me@gmail.com/ 
+    - https://lore.kernel.org/linux-riscv/20210719205247.1023289-1-twd2.me@gmail.com/ 
+    - https://lore.kernel.org/linux-riscv/20210719205314.1023455-1-twd2.me@gmail.com/ 
+  - [Attr Error + Warning (Nick) WIP](https://reviews.llvm.org/D106030)
+    - TODO (Nick): send v3 of CROSS_COMPILE
+    - TODO (Nick): Nathan had feedback on one patch `__error__`
+  - LLVM14 to branch
+  - Max TCWG IRC libaro #linaro-tcwg on libera.chat
+  - [Static analysis](https://lore.kernel.org/ksummit/20210723191023.GG25548@kadam/)
+  - Sept 21 tentative clang-13 ship
 
 ## July 14, 2021
-Death to CROSS_COMPILE!
-https://lore.kernel.org/lkml/20210708232522.3118208-1-ndesaulniers@google.com/ 
-Death to LLVM_IAS=1
-Mips can now be built with LLVM_IAS=1
-https://lore.kernel.org/lkml/20210628215029.2722537-1-ndesaulniers@google.com/ 
-Ppc and s390 left
-?=
-RISCV
-LOCAL
-https://reviews.llvm.org/D105720 
-https://sourceware.org/binutils/docs/as/Altmacro.html 
-https://lore.kernel.org/linux-riscv/CAKwvOdm65wmFQE6_wkVFFE6us99xXoqS8E-qORX9XmsD2uJ1dQ@mail.gmail.com/
-VDSO
-https://lore.kernel.org/lkml/20210707185105.1180526-1-abdulras@google.com/ 
-(Nick) __attribute__((error(“”))) __attribute__((warning(“”)))
-ThinLTO inline asm
-https://reviews.llvm.org/D104058
-Hexagon allyesconfig almost ready
-https://lore.kernel.org/lkml/20210708233849.3140194-1-nathan@kernel.org/ 
-Linaro Connect CFP
-Rust support? LLVM?
-Fallthrough edge case
-https://github.com/ClangBuiltLinux/linux/issues/1429 
-Abigail complex types
+  - [Death to CROSS_COMPILE!](https://lore.kernel.org/lkml/20210708232522.3118208-1-ndesaulniers@google.com/)
+  - Death to LLVM_IAS=1
+    - [Mips can now be built with LLVM_IAS=1](https://lore.kernel.org/lkml/20210628215029.2722537-1-ndesaulniers@google.com/)
+    - Ppc and s390 left
+  - ?=
+  - RISCV
+    - LOCAL
+      - https://reviews.llvm.org/D105720 
+      - https://sourceware.org/binutils/docs/as/Altmacro.html 
+      - https://lore.kernel.org/linux-riscv/CAKwvOdm65wmFQE6_wkVFFE6us99xXoqS8E-qORX9XmsD2uJ1dQ@mail.gmail.com/
+    - [VDSO](https://lore.kernel.org/lkml/20210707185105.1180526-1-abdulras@google.com/)
+  - (Nick) `__attribute__((error(“”))) __attribute__((warning(“”)))`
+  - [ThinLTO inline asm](https://reviews.llvm.org/D104058)
+  - [Hexagon allyesconfig almost ready](https://lore.kernel.org/lkml/20210708233849.3140194-1-nathan@kernel.org/)
+  - Linaro Connect CFP
+  - Rust support? LLVM?
+  - [Fallthrough edge case](https://github.com/ClangBuiltLinux/linux/issues/1429)
+  - Abigail complex types
 
 ## June 30, 2021
-PGO on the rocks
-https://lore.kernel.org/lkml/CAHk-=whqCT0BeqBQhW8D-YoLLgp_eFY=8Y=9ieREM5xx0ef08w@mail.gmail.com/ 
-Should be able to enable LLVM_IAS=1 on mips soon:
-https://lore.kernel.org/lkml/20210628215029.2722537-1-ndesaulniers@google.com/T/#u 
-Still some warnings
-Should we flip LLVM_IAS=1 to on when LLVM=1?
-PPC
-S390
-Toolchain MC has been accepted at plumbers
-https://www.linuxplumbersconf.org/blog/2021/index.php/2021/06/21/toolchains-and-kernel-microconference-accepted-into-2021-linux-plumbers-conference/ 
-More Nest devices switching to clang built kernels
-Leaving freenode IRC
-Send LLVM Revert Checker tool to Tom
-https://cs.android.com/android/platform/superproject/+/master:external/toolchain-utils/llvm_tools/revert_checker.py 
-Fortify source (Kees)
--Wrestrict (Kees, Arnd)
-We can build more 32b ARM? Should we add more to CI?
-https://tinyurl.com/linux-architectures
+  - [PGO on the rocks](https://lore.kernel.org/lkml/CAHk-=whqCT0BeqBQhW8D-YoLLgp_eFY=8Y=9ieREM5xx0ef08w@mail.gmail.com/) 
+  - [Should be able to enable LLVM_IAS=1 on mips soon](https://lore.kernel.org/lkml/20210628215029.2722537-1-ndesaulniers@google.com/T/#u)
+    - Still some warnings
+    - Should we flip LLVM_IAS=1 to on when LLVM=1?
+    - PPC
+    - S390
+  - [Toolchain MC has been accepted at plumbers](https://www.linuxplumbersconf.org/blog/2021/index.php/2021/06/21/toolchains-and-kernel-microconference-accepted-into-2021-linux-plumbers-conference/)
+  - More Nest devices switching to clang built kernels
+  - Leaving freenode IRC
+  - [Send LLVM Revert Checker tool to Tom](https://cs.android.com/android/platform/superproject/+/master:external/toolchain-utils/llvm_tools/revert_checker.py)
+  - Fortify source (Kees)
+  - -Wrestrict (Kees, Arnd)
+  - We can build more 32b ARM? Should we add more to CI?
+  - https://tinyurl.com/linux-architectures
 
 ## June 16, 2021
-RISCV
-https://reviews.llvm.org/D103539 
-LTO
-https://reviews.llvm.org/D104342 
-PGO
-https://reviews.llvm.org/D104253
-(GCOV) https://reviews.llvm.org/D104257 
-Bunch of objtool fixes last week (3)
-https://www.phoronix.com/scan.php?page=news_item&px=Clang-PGO-For-Linux-Next 
-Working through last minute approvals for plumbers MC
-Started discussion internally about “hardware for hackers”
-Distributors conf & CBL meetup 2
-https://lists.llvm.org/pipermail/llvm-dev/2021-March/149234.html 
- #clang-built-linux on LLVM Discord
+  - [RISCV](https://reviews.llvm.org/D103539)
+  - [LTO](https://reviews.llvm.org/D104342)
+  - [PGO](https://reviews.llvm.org/D104253)
+  - [GCOV](https://reviews.llvm.org/D104257) 
+  - Bunch of objtool fixes last week (3)
+  - https://www.phoronix.com/scan.php?page=news_item&px=Clang-PGO-For-Linux-Next 
+  - Working through last minute approvals for plumbers MC
+  - Started discussion internally about “hardware for hackers”
+  - Distributors conf & CBL meetup 2
+  - https://lists.llvm.org/pipermail/llvm-dev/2021-March/149234.html 
+  - [#clang-built-linux on LLVM Discord](https://discord.gg/xS7Z362)
 
 
 ## June 2, 2021
