@@ -6,6 +6,25 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Mar 9, 2022
+- Spectre-BHB fallout
+  - (Nathan) aarch64+LTO [header inclusion issue](https://lore.kernel.org/llvm/20220309191633.2307110-1-nathan@kernel.org/)
+  - (Nathan) arm semicolon
+  - arm [lld error](https://github.com/ClangBuiltLinux/linux/issues/1609)
+  - [arm operand](https://github.com/ClangBuiltLinux/linux/issues/1610)
+- (Nick) ["Never resolved function from blockaddress"](https://github.com/llvm/llvm-project/issues/52787) [fix](https://reviews.llvm.org/D120781)
+- [`-std=gnu11`](https://lore.kernel.org/linux-kbuild/20220308215615.14183-1-arnd@kernel.org/) early 5.18 merge window
+- (Nathan) [make LLVM= more flexible](https://lore.kernel.org/linux-kbuild/20220304170813.1689186-1-nathan@kernel.org/)
+- CONFIG_UAPI_HEADER_TEST
+  - [set `--target=`](https://lore.kernel.org/linux-kbuild/20220305125605.149913-1-masahiroy@kernel.org/)
+  - [allow `--sysroot`](https://lore.kernel.org/linux-kbuild/20220201213542.2808035-1-quic_eberman@quicinc.com/)
+- `__diag` support
+- (Fangrui) [ppc lld fix](https://lore.kernel.org/all/20220309055118.1551013-1-maskray@google.com/)
+- (Nick) mips sp register
+- [GCC added SCS support](https://lore.kernel.org/lkml/20220303073340.86008-1-ashimida@linux.alibaba.com/) :)
+- [x86 IBT working with clang](https://lore.kernel.org/lkml/20220308153011.021123062@infradead.org/)
+- tuxrun WIP, might be nice to have musl to cross compile various tests for
+
 ## Feb 23, 2022
 
 - [`(NOLOAD)` error/warning](https://github.com/ClangBuiltLinux/linux/issues/1597)
