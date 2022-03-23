@@ -6,6 +6,28 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Mar 23, 2022
+- bootconfig LTO [issue reported](https://lore.kernel.org/linux-doc/164724892075.731226.14103557516176115189.stgit@devnote2/).
+- [llvm-14 released](https://github.com/llvm/llvm-project/releases/tag/llvmorg-14.0.0).
+- 5.18 merge window is open
+  - `-std=gnu11` change in Kbuild tree, PR not yet sent.
+    - `-Wdeclaration-after-statement` [fixed](https://github.com/ClangBuiltLinux/linux/issues/1603) in `arm_neon.h` ARCH=arm BE in clang-15, need kernel fix
+- (Nick) Android CONFIG_UAPI_HEADER_TEST w/ Bionic sysroot WIP, Android kernel toolchain upgrade
+- ARCH=um support! Nathan [wiring up](https://github.com/ClangBuiltLinux/continuous-integration2/pull/337) CI coverage and [boot-utils](https://github.com/ClangBuiltLinux/boot-utils/pull/59).
+- (Bill) `__builtin_read_eflags` DOA.
+- (Bill) `-Wformat` patches in the works.
+- (Bill) randstruct work refreshed.
+- (Bill) [cr4/0 pinning](https://github.com/KSPP/linux/issues/19)
+- CFP season (plumbers MC CFP, Kernel security, EuroLLVM).
+- More kernel IBT discussions with Intel.
+  - João Moreira has done a lot of research in the area.
+    - [DROP THE ROP: Fine-grained Control-flow Integrity for the Linux Kernel](https://www.blackhat.com/docs/asia-17/materials/asia-17-Moreira-Drop-The-Rop-Fine-Grained-Control-Flow-Integrity-For-The-Linux-Kernel-wp.pdf)
+    - [Fine-grained Forward CFI on top of Intel CET / IBT](https://www.openwall.com/lists/kernel-hardening/2021/02/11/1)
+    - [Hardware-Assisted Fine-Grained Control-Flow Integrity: Adding Lasers to Intel’s CET/IBT](https://static.sched.com/hosted_files/lssna2021/8f/LSS_FINEIBT_JOAOMOREIRA.pdf)
+  - https://github.com/intel/fineibt_glibc/commits/fineibt
+  - https://github.com/samitolvanen/llvm-project/commits/kcfi
+- clangify-glibc https://sourceware.org/git/?p=glibc.git;a=shortlog;h=refs/heads/azanella/clang 
+
 ## Mar 9, 2022
 - Spectre-BHB fallout
   - (Nathan) aarch64+LTO [header inclusion issue](https://lore.kernel.org/llvm/20220309191633.2307110-1-nathan@kernel.org/)
