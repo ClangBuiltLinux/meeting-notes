@@ -6,6 +6,19 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Apr 6, 2022
+- (Bill) [randstruct](https://reviews.llvm.org/D121556)
+- (Nathan) [`ARCH=um` in CI](https://github.com/ClangBuiltLinux/boot-utils/pull/59)
+- (Nick) `CONFIG_UAPI_HEADER_TEST=y` with bionic sysroot, Masahiro agrees we should pursue `-nostdinc`.
+- (Nathan) `-Wdeclaration-after-statement` kernel fix
+- (Sami) [cfi aarch64 `__builtin_function_start`](https://lore.kernel.org/lkml/20220401201916.1487500-1-samitolvanen@google.com/)
+- (Joao) [`-mibt-seal` LTO](https://reviews.llvm.org/D118052)
+- [`-Wno-gnu` fixes](https://reviews.llvm.org/D122224)
+- (Nathan) [aarch64 qemu FEAT_LPA](https://github.com/ClangBuiltLinux/boot-utils/pull/61)
+- (Nathan) debugging paravirt -fzero-call-saved
+- Meetup Date Sept 10-11, announcement posts incoming, CFP too. Dublin, Ireland.
+- https://www.phoronix.com/scan.php?page=news_item&px=Linux-5.18-More-Flexible-LLVM
+
 ## Mar 23, 2022
 - bootconfig LTO [issue reported](https://lore.kernel.org/linux-doc/164724892075.731226.14103557516176115189.stgit@devnote2/).
 - [llvm-14 released](https://github.com/llvm/llvm-project/releases/tag/llvmorg-14.0.0).
