@@ -6,6 +6,20 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Apr 20, 2022
+- (Bill) [randstruct in phoronix](https://www.phoronix.com/scan.php?page=news_item&px=Clang-Linux-RandStruct)
+- (Sami) [kCFI](https://reviews.llvm.org/D119296)
+- (Joao) [`-mibt-seal`](https://reviews.llvm.org/D118052)
+- (Joao) [Fine IBT support](https://lore.kernel.org/linux-hardening/20220420004241.2093-1-joao@overdrivepizza.com/)
+- (Nick) Plumbers planning
+- (Nick) finally [fixed LTO blockaddress issue in llvm](https://reviews.llvm.org/D120781)
+- (Nick) Paperwork on restarting LLVM Bay Area Meetup
+- (Nick) LLVM+BOLT [kernel measurements](https://lore.kernel.org/llvm/CAKwvOdm08hr2p-ARqmPEGnCi6zZOtgmt5d45hYG2vo30mhyMrg@mail.gmail.com/)
+- (Nick) `-ffreestanding` on i386 [higher priority](https://lore.kernel.org/llvm/CAKwvOdkQeSx3uy25KaTrX=ywc26wDEefXHbCB_ifGot+yXGvHQ@mail.gmail.com/)
+- (Bill) [Meetup CBL](https://clangbuiltlinux.github.io/cbl-meetup/)
+- (Nick) docker image in the works
+- (Tom) [new llvm release cycle](https://discourse.llvm.org/t/llvm-14-0-1-schedule-and-release-updates/61227)
+
 ## Apr 6, 2022
 - (Bill) [randstruct](https://reviews.llvm.org/D121556)
 - (Nathan) [`ARCH=um` in CI](https://github.com/ClangBuiltLinux/boot-utils/pull/59)
