@@ -6,6 +6,14 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## May 4, 2022
+- [kCFI](https://lore.kernel.org/llvm/20220429203644.2868448-1-samitolvanen@google.com/)
+- LTO for [ppc64le](https://lore.kernel.org/llvm/20220429064547.2334280-1-aik@ozlabs.ru/) and [arm](https://github.com/ClangBuiltLinux/linux/issues/1627)
+- [`-fzero-call-used-regs`](https://reviews.llvm.org/D124836)
+- [randstruct](https://lore.kernel.org/llvm/20220503205503.3054173-1-keescook@chromium.org/)
+- [KMSAN](https://www.phoronix.com/scan.php?page=news_item&px=KernelMemorySanitizer-2022)
+- [cbl meetup 3 CFP](https://lore.kernel.org/llvm/CAGG=3QX8M0p2JQOs6tq0ZSqHKLhzVh77eCxYkh22SDL6Qaa36g@mail.gmail.com/)
+
 ## Apr 20, 2022
 - (Bill) [randstruct in phoronix](https://www.phoronix.com/scan.php?page=news_item&px=Clang-Linux-RandStruct)
 - (Sami) [kCFI](https://reviews.llvm.org/D119296)
