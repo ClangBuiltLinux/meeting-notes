@@ -6,6 +6,27 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## May 18, 2022
+- [LTO for riscv](https://lore.kernel.org/llvm/20220512205545.992288-1-twd2.me@gmail.com/)
+- cbl meetup 3 [location](https://clangbuiltlinux.github.io/cbl-meetup/)
+- plumbers [location](https://lpc.events/)
+- (Nick) ARCH=arm [-Wunused-command-line](https://lore.kernel.org/llvm/20220516210954.1660716-1-ndesaulniers@google.com/)
+- (Nick) [statically linked clang image](https://github.com/ClangBuiltLinux/containers/pull/5) for kernel.org
+- [regression](https://lore.kernel.org/linux-hardening/20220511174531.1098548-1-keescook@chromium.org/) from 64b div on 32b arm for old versions of clang.
+  - Dropped
+- (Nathan) working towards [enabling](https://github.com/ClangBuiltLinux/continuous-integration2/pull/366) chromeos kernel config testing in ci
+- [390 LLVM_IAS patches](https://lore.kernel.org/lkml/20220511120532.2228616-1-hca@linux.ibm.com/), LTO next?
+  - (Nathan) [wire up CI support](https://github.com/ClangBuiltLinux/continuous-integration2/pull/367)
+- (Nick) fixed [blocker](https://reviews.llvm.org/D125285) for removing `-ffreestanding` from i386, for FORTIFY_SOURCE
+- download url blank for some tuxsuite builds
+- (Nathan) [ppc vdso LLD fixes](https://lore.kernel.org/llvm/20220509204635.2539549-1-nathan@kernel.org/)
+- [interesting builtin patches](https://lore.kernel.org/llvm/20220510142550.1686866-2-mailhol.vincent@wanadoo.fr/)
+- riscv 9th arg calling convention [issue reported](https://lore.kernel.org/llvm/20220510065336.hlfjrc25ajed5zj4@M910t/)
+- (Bill) [AArch64 Add support for -fzero-call-used-regs](https://reviews.llvm.org/D124836)
+- objtool regression, [patch pending](https://github.com/ClangBuiltLinux/linux/issues/1639#issuecomment-1129465068)
+- [arm eabi -next regression](https://github.com/ClangBuiltLinux/linux/issues/1635)
+- (Mark) clang cross compile kselftest doesn't work correctly
+
 ## May 4, 2022
 - [kCFI](https://lore.kernel.org/llvm/20220429203644.2868448-1-samitolvanen@google.com/)
 - LTO for [ppc64le](https://lore.kernel.org/llvm/20220429064547.2334280-1-aik@ozlabs.ru/) and [arm](https://github.com/ClangBuiltLinux/linux/issues/1627)
