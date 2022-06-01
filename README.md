@@ -6,6 +6,22 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## June 1, 2022
+- (Phoebe) x86 [SLS patch](https://reviews.llvm.org/D126137) landed
+- (Nick) kernel.org toolchain work
+- (Nathan) [s390 LLVM_IAS=1 in ci](https://github.com/ClangBuiltLinux/continuous-integration2/pull/367)
+- (Nick) ARCH=arm `-Wunused-command-line` [will need compiler change]([url](https://lore.kernel.org/llvm/CAKwvOdmkd2PxvMUZA=A-72eATGDZkqDj--Bv1W+Xt_K_LWdROA@mail.gmail.com/)).
+- (Nathan) [libvert blog post](https://nathanchance.dev/posts/github-actions-fedora-libvirt/)
+- build timeouts?
+- (Kees) BOS
+  - https://github.com/llvm/llvm-project/issues/55741
+  - https://github.com/llvm/llvm-project/issues/55742
+- ppc vdso lld patch is merged, LTO next?
+- merge window open
+  - riscv asm patch needed
+- meetups (CBL & Plumbers)
+- loongarch did the llvm patches go in?
+
 ## May 18, 2022
 - [LTO for riscv](https://lore.kernel.org/llvm/20220512205545.992288-1-twd2.me@gmail.com/)
 - cbl meetup 3 [location](https://clangbuiltlinux.github.io/cbl-meetup/)
