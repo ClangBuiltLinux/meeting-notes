@@ -21,6 +21,7 @@ Send to: llvm@lists.linux.dev
   - riscv asm patch needed
 - meetups (CBL & Plumbers)
 - loongarch did the llvm patches go in?
+  - [yes](https://github.com/llvm/llvm-project/commits/main/llvm/lib/Target/LoongArch)
 
 ## May 18, 2022
 - [LTO for riscv](https://lore.kernel.org/llvm/20220512205545.992288-1-twd2.me@gmail.com/)
