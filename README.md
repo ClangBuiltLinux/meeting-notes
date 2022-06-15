@@ -6,6 +6,21 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## June 15, 2022
+- CBL Meetup [attend form](https://forms.gle/iCkYRyUqi2Bd26YN9)
+- [LLVM Bay Area Monthly Meetup](https://discourse.llvm.org/t/llvm-bay-area-monthly-meetup-mon-july-11-22-6pm/63193) (Mon July 11 '22 6pm)
+- (Nick) [Coresight assembler issue v4](https://lore.kernel.org/llvm/20220614220229.1640085-1-ndesaulniers@google.com/)
+- (Nathan) container builds ported to [self hosted actions](https://github.com/ClangBuiltLinux/containers/pull/25), [aarch64 host builds](https://github.com/ClangBuiltLinux/containers/pull/29) working.
+- (Justin) `-Wformat` fixes [0](https://lore.kernel.org/llvm/20220607191119.20686-1-jstitt007@gmail.com/)[1](https://lore.kernel.org/llvm/20220607180847.13482-1-jstitt007@gmail.com/)[2](https://lore.kernel.org/llvm/20220608223539.470472-1-justinstitt@google.com/) 
+- (Nick) toolchain
+  - TODO: is there an s390 gnu binutils multiarch package on alpine?
+    - [Yes](https://pkgs.alpinelinux.org/package/edge/testing/x86_64/binutils-s390x)
+- (Nathan) [testing ChromeOS kernels again](https://github.com/ClangBuiltLinux/continuous-integration2/pull/376)
+- [CI patch application failing](https://gitlab.com/Linaro/tuxsuite/-/issues/169)
+- (Mark) [kselftest cross compilation wired up](https://lore.kernel.org/llvm/20220614121045.1046475-1-broonie@kernel.org/)
+- (Nathan) `-Wframe-larger-than` in [sound/soc/intel/avs/path.c](https://github.com/ClangBuiltLinux/linux/issues/1642)
+- `__aeabi_uldivmod` in [drivers/mtd/parsers/scpart.o](https://github.com/ClangBuiltLinux/linux/issues/1635)
+
 ## June 1, 2022
 - (Phoebe) x86 [SLS patch](https://reviews.llvm.org/D126137) landed
 - (Nick) kernel.org toolchain work
