@@ -6,6 +6,25 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## June 29, 2022
+- Patches for gen_compile_commands [1](https://lore.kernel.org/llvm/20220628012353.13995-1-jhubbard@nvidia.com/)[2](https://lore.kernel.org/llvm/20220628122741.93641-2-daniel.thompson@linaro.org/)
+- (Nick) [axe CONFIG_CC_OPTIMIZE_FOR_PERFORMANCE_O3](https://lore.kernel.org/linux-kbuild/20220628210407.3343118-1-ndesaulniers@google.com/)
+- (Nick) [coresight fix for UBSAN_TRAP](https://lore.kernel.org/llvm/20220623174131.3818333-1-ndesaulniers@google.com/)
+- (Nick) [issue with objtool fallthough](https://github.com/ClangBuiltLinux/linux/issues/1657)
+- (Nick) [`-Wunused-but-set-variable` building perf](https://github.com/ClangBuiltLinux/linux/issues/1654)
+- (Nick) PGO done for static clang, but musl profiles hurt perf
+- (Nathan) [fix for downstream incfs](https://android-review.googlesource.com/c/kernel/common/+/2134978/)
+- (Nathan) [sigpipe with `grep -q`](https://github.com/ClangBuiltLinux/linux/issues/1651)
+- (Nathan) [chasing cros ci build timeouts](https://github.com/ClangBuiltLinux/continuous-integration2/pull/383)
+- (Nathan) lld-11 breakage in -next
+- (Arnd) need musl cross libs for hostcc
+- (Tom) gcc target triples aren't necessarily the same behavior for clang
+- (Tom) fedora links with -z,now
+  - Upstream link against libclang-cpp.so
+  - PGO experiments
+- (Justin) `-Wformat` warning fixes
+
+
 ## June 15, 2022
 - CBL Meetup [attend form](https://forms.gle/iCkYRyUqi2Bd26YN9)
 - [LLVM Bay Area Monthly Meetup](https://discourse.llvm.org/t/llvm-bay-area-monthly-meetup-mon-july-11-22-6pm/63193) (Mon July 11 '22 6pm)
