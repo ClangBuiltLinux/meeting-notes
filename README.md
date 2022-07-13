@@ -24,8 +24,8 @@ Send to: llvm@lists.linux.dev
 - [callbr rework](https://reviews.llvm.org/D129288), need time to test
 - [`-mstack-protector-guard-symbol`](https://reviews.llvm.org/D129346)
 - (Peter) is function attribute "keep" arch specific?
-  - (Nick) [No](https://godbolt.org/z/8Ke3Yaz51)
-- [ubsan divide by zero](https://github.com/ClangBuiltLinux/linux/issues/1662), need to disable this config for clang for now
+  - (Nick) [Yes](https://godbolt.org/z/8Ke3Yaz51)
+- [ubsan divide by zero](https://github.com/ClangBuiltLinux/linux/issues/1657), need to disable this config for clang for now
 - (Arnd) x86-64-v2 might be a good minimum target for static clang builds
 
 ## June 29, 2022
