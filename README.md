@@ -6,6 +6,28 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## July 13, 2022
+- [Retbleed](https://comsec.ethz.ch/research/microarch/retbleed/)
+  - (Nick) [llvm patch](https://reviews.llvm.org/D129572)
+  - (Nathan) [0day randconfig fix](https://lore.kernel.org/llvm/20220713152436.2294819-1-nathan@kernel.org/)
+  - (Nathan) [reported issue with sanitizers](https://github.com/llvm/llvm-project/issues/56514)
+    - https://github.com/llvm/llvm-project/commit/a88c722e687e6780dcd6a58718350dc76fcc4cc9
+  - Nick will be focused on LLVM backports for Android, need help from testers to report issues
+  - backports queued back to 5.10.y, Nick needs to know if 5.4 or older is attempted
+- (Nick) [coresight patch picked up](https://lore.kernel.org/lkml/20220708231520.3958391-1-ndesaulniers@google.com/)
+  - (Arnd) mentioned its probably better to fix this differently in the long run, perhaps "i" constrained inputs to inline asm
+- (Fangrui) implement -mrelax on lld!
+  - [kernel patch](https://lore.kernel.org/llvm/20220710071117.446112-1-maskray@google.com/)
+  - [llvm impl](https://github.com/llvm/llvm-project/commit/6611d58f5bbcbec77262d392e2923e1d680f6985)
+  - [llvm fixup](https://github.com/llvm/llvm-project/commit/6b1d151fe3dc530195d8802f1ecc247c8235dd3a)
+- (Justin) lots of -Wformat fixes, time to remove -Wno-format for clang?
+- [callbr rework](https://reviews.llvm.org/D129288), need time to test
+- [`-mstack-protector-guard-symbol`](https://reviews.llvm.org/D129346)
+- (Peter) is function attribute "keep" arch specific?
+  - (Nick) [No](https://godbolt.org/z/8Ke3Yaz51)
+- [ubsan divide by zero](https://github.com/ClangBuiltLinux/linux/issues/1662), need to disable this config for clang for now
+- (Arnd) x86-64-v2 might be a good minimum target for static clang builds
+
 ## June 29, 2022
 - Patches for gen_compile_commands [1](https://lore.kernel.org/llvm/20220628012353.13995-1-jhubbard@nvidia.com/)[2](https://lore.kernel.org/llvm/20220628122741.93641-2-daniel.thompson@linaro.org/)
 - (Nick) [axe CONFIG_CC_OPTIMIZE_FOR_PERFORMANCE_O3](https://lore.kernel.org/linux-kbuild/20220628210407.3343118-1-ndesaulniers@google.com/)
