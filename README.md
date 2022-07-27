@@ -8,13 +8,30 @@ Send to: llvm@lists.linux.dev
 
 ## July 27, 2022
 - (Nick) `blockaddress`/`callbr`
+  - https://reviews.llvm.org/D130127
+  - https://reviews.llvm.org/D130290
+  - https://reviews.llvm.org/D130391
+  - https://reviews.llvm.org/D130323
+  - https://reviews.llvm.org/D130316
 - (Justin) `-Wformat`
+  - https://github.com/ClangBuiltLinux/linux/issues/378
+  - https://lore.kernel.org/20220720232332.2720091-1-justinstitt@google.com/
 - retbleed fixes / kcfi changes
+  - https://lore.kernel.org/20220716230344.239749011@linutronix.de/
 - mips 32b 64b o32
+  - https://lore.kernel.org/CADVatmNtFYyqk0KwYzB1x6hOPkQ=0gV8mPN1BWp6QWrCs5GaxA@mail.gmail.com/
+  - https://github.com/ClangBuiltLinux/linux/issues/884
+  - https://llvm.org/pr38063
 - X32
+  - https://lore.kernel.org/20220701210437.579322-1-alex_y_xu@yahoo.ca/
+  - https://lore.kernel.org/6cf4bab7-8c38-a2ee-07b9-fc95f901d2cb@kernel.org/
 - llvm-15 release
+  - https://github.com/ClangBuiltLinux/linux/issues/1678
 - aeabi_ulmoddiv
+  - https://github.com/ClangBuiltLinux/linux/issues/1666
+  - https://github.com/llvm/llvm-project/issues/56153
 - cbl meetup before plumbers
+  - https://clangbuiltlinux.github.io/cbl-meetup/
 
 ## July 13, 2022
 - [Retbleed](https://comsec.ethz.ch/research/microarch/retbleed/)
