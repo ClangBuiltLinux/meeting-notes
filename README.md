@@ -6,6 +6,16 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## July 27, 2022
+- (Nick) `blockaddress`/`callbr`
+- (Justin) `-Wformat`
+- retbleed fixes / kcfi changes
+- mips 32b 64b o32
+- X32
+- llvm-15 release
+- aeabi_ulmoddiv
+- cbl meetup before plumbers
+
 ## July 13, 2022
 - [Retbleed](https://comsec.ethz.ch/research/microarch/retbleed/)
   - (Nick) [llvm patch](https://reviews.llvm.org/D129572)
