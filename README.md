@@ -6,6 +6,28 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Aug 10, 2022
+- (Bill) Looking into reg stack clearing boot failure with paravirt
+- (Justin) [2.1% speedup](https://reviews.llvm.org/D131532) in build time
+- (Craig) [dword division by constant](https://goto.google.com/llvm-cr/D130862)
+  - Nick setup chat with Eli
+- riscv boot failure report
+- ppc ftrace regression ([fixed](https://lore.kernel.org/llvm/20220809095907.418764-1-naveen.n.rao@linux.vnet.ibm.com/)) reported by CKI
+- (Nick) exec stack (BFD 2.39)
+- (Phoebe) [`-mindirect-branch-cs-prefix`](https://reviews.llvm.org/D130754)
+  - Need kernel side fix to use this
+- (Yuanfang) [UBSAN fix for setcc inline asm](https://reviews.llvm.org/D129954)
+- (Nathan) [rewrote boot-utils in python](https://github.com/ClangBuiltLinux/boot-utils/pull/67)
+- (Remi) rewrote CI to use tuxsuite plans
+- [New AOSP clang](https://android-review.googlesource.com/c/kernel/common/+/2165482/)
+  - Do we need to let tuxsuite know?
+    - https://gitlab.com/Linaro/tuxmake/-/issues/193
+- clang-15
+  - tuxmake has it, tuxsuite needs it
+- [timetable for toolchain track at plumbers is live](https://lpc.events/event/16/sessions/132/#20220914)
+  - Wednesday Sept 14 2022
+- (Justin) `-Wformat` should be headed to mainline this merge window
+
 ## July 27, 2022
 - (Nick) `blockaddress`/`callbr`
   - https://reviews.llvm.org/D130127
