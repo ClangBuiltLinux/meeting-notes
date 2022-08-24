@@ -8,15 +8,22 @@ Send to: llvm@lists.linux.dev
 
 ## Aug 24, 2022
 - (Saleem) fixing RISCV [regression](https://reviews.llvm.org/D132482)
-- (Nick) asm goto cleanups, https://reviews.llvm.org/D130316, https://reviews.llvm.org/D130290, 
-- (Nick) -Wformat cleanups https://reviews.llvm.org/D132266, https://reviews.llvm.org/D132568 https://lore.kernel.org/linux-kbuild/20220716084532.2324050-1-youngmin.nam@samsung.com/
-- (Nathan) remove zero format length cruft
-  - todo: enable subflags of -Wformat if -Wno-format is set
-- (Nick) [remove CC_HAS_ASM_GOTO](https://lore.kernel.org/linux-kbuild/20220819190640.2763586-1-ndesaulniers@google.com/)
-- (Nathan) chasing lots of -Wsometimes-uninitialized
-- clang-15 in ci
-- (Nathan) https://lore.kernel.org/llvm/20220817185410.1174782-1-nathan@kernel.org/: x86/build: Move '-mindirect-branch-cs-prefix' out of GCC-only block
-- (Nathan) https://lore.kernel.org/llvm/20220810010809.2024482-1-nathan@kernel.org/: -Wbitfield-constant-conversion
+- (Nick) asm goto cleanups
+  - https://reviews.llvm.org/D130316
+  - https://reviews.llvm.org/D130290
+- (Nick) `-Wformat` cleanups
+  - https://lore.kernel.org/CAHk-=wivP4zipYnwNWCLF5cd24GLs3m8=Sp7M-CmmPva_UC+3Q@mail.gmail.com/
+  - https://reviews.llvm.org/D132266
+  - https://reviews.llvm.org/D132568
+  - https://lore.kernel.org/20220716084532.2324050-1-youngmin.nam@samsung.com/
+- (Nathan) [Remove `-Wno-format-zero-length`](https://git.kernel.org/linus/370655bc183b1824ba623e621b58e8c2616c839c)
+  - TODO: Enable [subflags of `-Wformat`](https://github.com/llvm/llvm-project/blob/dda38786534af733786c681e0c47b863e0626a0e/clang/include/clang/Basic/DiagnosticGroups.td#L934-L938) if `-Wno-format` is set
+- (Nick) [remove CONFIG_CC_HAS_ASM_GOTO](https://lore.kernel.org/20220819190640.2763586-1-ndesaulniers@google.com/)
+- (Nathan) chasing lots of `-Wsometimes-uninitialized` in -next ([issues](https://github.com/ClangBuiltLinux/linux/issues?q=is%3Aopen+label%3A-Wsometimes-uninitialized+label%3A%22%5BBUG%5D+linux-next%22))
+- [`clang-15` in CI](https://github.com/ClangBuiltLinux/continuous-integration2/issues/387)
+- (Nathan) [x86/build: Move '-mindirect-branch-cs-prefix' out of GCC-only block](https://lore.kernel.org/20220817185410.1174782-1-nathan@kernel.org/)
+  - Required by [this series](https://lore.kernel.org/20211013122217.304265366@infradead.org/), which [landed in 5.16](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/log/?h=87c87ecd00c54ecd677798cb49ef27329e0fab41)
+- (Nathan) [New instance of `-Wbitfield-constant-conversion`](https://lore.kernel.org/llvm/20220810010809.2024482-1-nathan@kernel.org/)
 
 ## Aug 10, 2022
 - (Bill) Looking into reg stack clearing boot failure with paravirt
