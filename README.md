@@ -27,25 +27,30 @@ Send to: llvm@lists.linux.dev
 
 ## Aug 10, 2022
 - (Bill) Looking into reg stack clearing boot failure with paravirt
+  - https://github.com/ClangBuiltLinux/linux/issues/1585
+  - https://github.com/KSPP/linux/issues/192
+  - https://reviews.llvm.org/D132073
 - (Justin) [2.1% speedup](https://reviews.llvm.org/D131532) in build time
-- (Craig) [dword division by constant](https://goto.google.com/llvm-cr/D130862)
+- (Craig) [dword division by constant](https://reviews.llvm.org/D130862)
   - Nick setup chat with Eli
-- riscv boot failure report
-- ppc ftrace regression ([fixed](https://lore.kernel.org/llvm/20220809095907.418764-1-naveen.n.rao@linux.vnet.ibm.com/)) reported by CKI
-- (Nick) exec stack (BFD 2.39)
+- [riscv boot failure report](https://lore.kernel.org/bd14f1a2-750d-2511-df0a-85a9f5925f84@microchip.com/)
+- ppc ftrace regression
+  - [fixed](https://lore.kernel.org/llvm/20220809095907.418764-1-naveen.n.rao@linux.vnet.ibm.com/))
+  - [reported by CKI](https://github.com/ClangBuiltLinux/linux/issues/1682)
+- (Nick) [exec stack (BFD 2.39)](https://git.kernel.org/linus/0d362be5b14200b77ecc2127936a5ff82fbffe41)
 - (Phoebe) [`-mindirect-branch-cs-prefix`](https://reviews.llvm.org/D130754)
   - Need kernel side fix to use this
 - (Yuanfang) [UBSAN fix for setcc inline asm](https://reviews.llvm.org/D129954)
 - (Nathan) [rewrote boot-utils in python](https://github.com/ClangBuiltLinux/boot-utils/pull/67)
-- (Remi) rewrote CI to use tuxsuite plans
+- (Remi) [rewrote CI to use tuxsuite plans](https://github.com/ClangBuiltLinux/continuous-integration2/pull/395)
 - [New AOSP clang](https://android-review.googlesource.com/c/kernel/common/+/2165482/)
   - Do we need to let tuxsuite know?
     - https://gitlab.com/Linaro/tuxmake/-/issues/193
-- clang-15
-  - tuxmake has it, tuxsuite needs it
+- `clang-15` for CI
+  - [tuxmake has it](https://gitlab.com/Linaro/tuxmake/-/issues/192), [tuxsuite needs it](https://gitlab.com/Linaro/tuxsuite/-/issues/171)
 - [timetable for toolchain track at plumbers is live](https://lpc.events/event/16/sessions/132/#20220914)
   - Wednesday Sept 14 2022
-- (Justin) `-Wformat` should be headed to mainline this merge window
+- (Justin) [`-Wformat` should be headed to mainline](https://lore.kernel.org/20220720232332.2720091-1-justinstitt@google.com/) this merge window
 
 ## July 27, 2022
 - (Nick) `blockaddress`/`callbr`
