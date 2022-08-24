@@ -28,7 +28,7 @@ Send to: llvm@lists.linux.dev
 ## Aug 10, 2022
 - (Bill) Looking into reg stack clearing boot failure with paravirt
 - (Justin) [2.1% speedup](https://reviews.llvm.org/D131532) in build time
-- (Craig) [dword division by constant](https://goto.google.com/llvm-cr/D130862)
+- (Craig) [dword division by constant](https://reviews.llvm.org/D130862)
   - Nick setup chat with Eli
 - riscv boot failure report
 - ppc ftrace regression ([fixed](https://lore.kernel.org/llvm/20220809095907.418764-1-naveen.n.rao@linux.vnet.ibm.com/)) reported by CKI
