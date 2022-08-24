@@ -6,6 +6,18 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Aug 24, 2022
+- (Saleem) fixing RISCV [regression](https://reviews.llvm.org/D132482)
+- (Nick) asm goto cleanups, https://reviews.llvm.org/D130316, https://reviews.llvm.org/D130290, 
+- (Nick) -Wformat cleanups https://reviews.llvm.org/D132266, https://reviews.llvm.org/D132568 https://lore.kernel.org/linux-kbuild/20220716084532.2324050-1-youngmin.nam@samsung.com/
+- (Nathan) remove zero format length cruft
+  - todo: enable subflags of -Wformat if -Wno-format is set
+- (Nick) [remove CC_HAS_ASM_GOTO](https://lore.kernel.org/linux-kbuild/20220819190640.2763586-1-ndesaulniers@google.com/)
+- (Nathan) chasing lots of -Wsometimes-uninitialized
+- clang-15 in ci
+- (Nathan) https://lore.kernel.org/llvm/20220817185410.1174782-1-nathan@kernel.org/: x86/build: Move '-mindirect-branch-cs-prefix' out of GCC-only block
+- (Nathan) https://lore.kernel.org/llvm/20220810010809.2024482-1-nathan@kernel.org/: -Wbitfield-constant-conversion
+
 ## Aug 10, 2022
 - (Bill) Looking into reg stack clearing boot failure with paravirt
 - (Justin) [2.1% speedup](https://reviews.llvm.org/D131532) in build time
