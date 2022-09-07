@@ -6,6 +6,21 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Sep 7, 2022
+- CBL meetup is this weekend
+- [plumbers is next week](https://lpc.events/event/16/)
+  - [Toolchain Track is Wednesday](https://lpc.events/event/16/sessions/132/#20220914)
+- [clang-15 has been released](https://discourse.llvm.org/t/llvm-15-0-0-release/65099)!
+- (Nick) [fixing up](https://lore.kernel.org/lkml/20220907045907.484043-1-ndesaulniers@google.com/) debug info for asm, split debug info
+- (Kees) [fixup for FORTIFY](https://lore.kernel.org/llvm/20220902204351.2521805-2-keescook@chromium.org/)
+- (Bill) [ZERO_CALL_USED_REGS and paravirt](https://lore.kernel.org/all/20220902213750.1124421-3-morbo@google.com/)
+- (Nick) `-Wformat` [back on](https://lore.kernel.org/lkml/20220901175913.2183047-1-ndesaulniers@google.com/)
+- (Masahiro) [might be](https://lore.kernel.org/lkml/20220830190811.323760-1-masahiroy@kernel.org/) bumping binutils min version to 2.25.1
+- (Nathan) [AMDGPU stack useage fixes](https://lore.kernel.org/llvm/20220830203409.3491379-1-nathan@kernel.org/)
+- (Anders) [qemu boot timeouts](https://lore.kernel.org/all/20220906172257.2776521-1-alex.bennee@linaro.org/)
+- (Craig) [div by constant](https://reviews.llvm.org/D130862)
+
+
 ## Aug 24, 2022
 - (Saleem) fixing RISCV [regression](https://reviews.llvm.org/D132482)
 - (Nick) asm goto cleanups
