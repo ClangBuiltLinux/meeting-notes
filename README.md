@@ -6,6 +6,22 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Sep 21, 2022
+- Yonghong Song from Meta stopped by to discuss Meta using ClangBuiltLinux + [PGO](https://lore.kernel.org/linux-doc/20210407211704.367039-1-morbo@google.com/) in production at Meta as [alluded to at Linux plumbers conf](https://www.phoronix.com/news/Meta-Linux-Kernel-Live-Patching).
+- Bill is seeking feedback on the ClangBuiltLinux Meetup, check your emails.
+- PPC [xor autovectorization issue](https://github.com/ClangBuiltLinux/linux/issues/1713).
+- Joao is working on [JCC tail calls to thunks in llvm](https://lore.kernel.org/llvm/Yv3uI%2FMoJVctmBCh@worktop.programming.kicks-ass.net/).
+- overflow_kunit [issue](https://github.com/ClangBuiltLinux/linux/issues/1711).
+- s390 qemu issue [fixed](https://github.com/ClangBuiltLinux/linux/issues/1709).
+- kCFI [long tail fixes](https://github.com/ClangBuiltLinux/linux/issues/1705).
+- Nathan has been fixing multiple -Wframe-larger-than= instances in AMDGPU. [0](https://github.com/ClangBuiltLinux/linux/issues/1681)[1](https://github.com/ClangBuiltLinux/linux/issues/1710)\
+- Nick tracking register exhaustion blocking [Android toolchain upgrade](https://android-review.googlesource.com/c/kernel/common/+/2212595).
+- ChromeOS dealing with [AutoFDO-related issues](https://lore.kernel.org/linux-arm-kernel/20220920082005.2459826-1-denik@chromium.org/) blocking their toolchain upgrade.
+- Discussions being held about additional Rust and RISCV CI testing.
+- 6.1 merge window to open in ~2-3 weeks
+- Matthew Wilcox gave [a talk on 128b pointers at plumbers](https://www.youtube.com/watch?v=e2SZoUPhDRg&t=23063s).
+
+
 ## Sep 7, 2022
 - CBL meetup is this weekend
 - [plumbers is next week](https://lpc.events/event/16/)
