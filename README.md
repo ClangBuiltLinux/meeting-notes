@@ -6,6 +6,44 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Oct 19, 2022
+- (Nick) asm goto w/ outputs along indirect edges
+- (Nick) backporting debug info for dwarf
+  - watch for conflicts w/ Nathan's backports for riscv debug info.
+- (Paul) [working on more info](https://reviews.llvm.org/D135488) when `-Wframe-larger-than=` are encountered
+- Discussions with tuxsuite/Linaro on [docker containers](https://gitlab.com/Linaro/tuxsuite/-/issues/84)
+- kernel.org clang binaries
+  - helpdesk kernel.org ticket
+- [ICC support removed from kbuild](https://www.phoronix.com/news/Linux-Kernel-Drop-ICC)
+- (Bill) PGO new format, compiler-ABI implications
+- (Bill) AutoFDO testing/WIP
+- (Bill) [`-fstrict-flex-arrays=3`](https://reviews.llvm.org/D134902)
+- kCFI
+  - [ASAN](https://github.com/ClangBuiltLinux/linux/issues/1742)
+  - [ftrace](https://github.com/ClangBuiltLinux/linux/issues/1743)
+  - FineIBT patchset inbound (new version in the works)
+  - constant blinding bpf
+- x86 PKS (kernel changes)
+- glibc w/ clang skunkworks
+  - Let's talk w/ Bero about https://github.com/OpenMandrivaAssociation/glibc
+- (Craig) improving division by constant
+  - Clang will be missing support for signed divisions
+
+## Oct 5, 2022
+- (Nick) Android toolchain upgrades
+  - i386
+    - [memmove LTO issue](https://lore.kernel.org/llvm/20221018172155.287409-1-ndesaulniers@google.com/)
+    - [stack useage](https://lore.kernel.org/llvm/20221011205547.14553-1-ndesaulniers@google.com/)
+  - arm
+    - [uldivmod in nwfp](https://lore.kernel.org/lkml/20221010225342.3903590-1-ndesaulniers@google.com/)
+    - `.fnstart` issue (reverted)
+- [riscv LTO](https://lore.kernel.org/llvm/20220512205545.992288-1-twd2.me@gmail.com/) [CI](https://github.com/ClangBuiltLinux/continuous-integration2/issues/453)
+- [website formatting for build matrix](https://github.com/ClangBuiltLinux/continuous-integration2/pull/454)
+- rust, kcfi, kunit, and hardening updates for this merge window
+- (Nathan) [riscv binutils interop bug](https://github.com/ClangBuiltLinux/linux/issues/1719) w/ DWARF
+- `-gsplit-dwarf=single` might be interesting to use in the kernel
+- clangd folks put a dent in top perf issue
+
 ## Sep 21, 2022
 - Yonghong Song from Meta stopped by to discuss Meta using ClangBuiltLinux + [PGO](https://lore.kernel.org/linux-doc/20210407211704.367039-1-morbo@google.com/) in production at Meta as [alluded to at Linux plumbers conf](https://www.phoronix.com/news/Meta-Linux-Kernel-Live-Patching).
 - Bill is seeking feedback on the ClangBuiltLinux Meetup, check your emails.
