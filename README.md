@@ -6,6 +6,24 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Nov 2, 2022
+
+- (Sami) [`-Wincompatible-function-pointer-types-strict`](https://github.com/ClangBuiltLinux/linux/issues/1745)
+- (Nathan) [Fixes for `-Wincompatible-function-pointer-types-strict`](https://github.com/ClangBuiltLinux/linux/issues/1750)
+- (Nick) [support for `-gz=zstd`](https://lore.kernel.org/20221020175655.1660864-1-ndesaulniers@google.com/)
+- (Nick) [asm goto with outputs along indirect edges](https://reviews.llvm.org/D136497), which found [a GCC bug](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=107385)
+- (Bill) [`-fstrict-flex-arrays=3` landed](https://github.com/llvm/llvm-project/commit/7f93ae808634e33e4dc9bce753c909aa5f9a6eb4)
+- (Joao) [emitting `0xcc` for `-fpatchable-function-entry`](https://lore.kernel.org/1f6069657f4630c36d60baab2e9b3d10@overdrivepizza.com/)
+- [arm64 AMDGPU `-Wframe-larger-than`](https://github.com/ClangBuiltLinux/linux/issues/1752)
+- LoongArch asm fixes, might be able to compile Linux soon?
+  - [`[Clang][LoongArch] Support inline asm constraint 'J'`](https://github.com/llvm/llvm-project/commit/cd0174aacb734904205ed7827fb923acda08f79a)
+  - [`[LoongArch] Support inline asm operand modifier 'z'`](https://github.com/llvm/llvm-project/commit/e415cb1d61e798b6d69b5960a90f00518ca5008f)
+- [FineIBT queued in `x86/core`](https://git.kernel.org/pub/scm/linux/kernel/git/tip/tip.git/log/?h=0c3e806ec0f9771fa1f34c60499097d9260a8bb7)
+- [s390 misaligned symbol linker errors](https://github.com/ClangBuiltLinux/linux/issues/1747)
+- [s390 requiring clang 15.0.0](https://lore.kernel.org/20221031123456.3872220-1-hca@linux.ibm.com/)
+- [New instance of recordmcount issue](https://github.com/ClangBuiltLinux/linux/issues/981#issuecomment-1290981312)
+- [Initial glibc clang patches submitted](https://sourceware.org/pipermail/libc-alpha/2022-October/143036.html), [slimmed down v2](https://sourceware.org/pipermail/libc-alpha/2022-November/143148.html)
+
 ## Oct 19, 2022
 - (Nick) asm goto w/ outputs along indirect edges
 - (Nick) backporting debug info for dwarf
