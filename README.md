@@ -6,6 +6,18 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Nov 30, 2022
+
+- (Nathan) [Fix for `__thumb2__` warnings accepted](http://git.armlinux.org.uk/cgit/linux-arm.git/commit/?id=59e2cf8d21e05391c42628eb9fb5bb40f9d9698f)
+- (Nathan) [Fix for lack of modpost warnings with LTO](https://lore.kernel.org/20221129190123.872394-1-nathan@kernel.org/)
+- (Nathan) Investigating [-tip `objtool` memory usage regression](https://gitlab.com/Linaro/tuxsuite/-/issues/183)
+- (Kees + Bill) `SIGPIPE` handler revert merged into LLVM main and released in 15.0.6
+  - https://github.com/ClangBuiltLinux/linux/issues/1651
+  - https://github.com/llvm/llvm-project/issues/59037
+  - https://github.com/llvm/llvm-project/commit/4787efa38066adb51e2c049499d25b3610c0877b
+- [`objtool` build system improvements](https://lore.kernel.org/20221122001125.765003-1-irogers@google.com/)
+- [`ARCH=arm allmodconfig -Werror`](https://lore.kernel.org/20221125120750.3537134-1-lee@kernel.org/)
+
 ## Nov 2, 2022
 
 - (Sami) [`-Wincompatible-function-pointer-types-strict`](https://github.com/ClangBuiltLinux/linux/issues/1745)
