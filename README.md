@@ -6,6 +6,19 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Dec 14, 2022
+- (Lee) AMDGPU driver disabled for non-32b targets
+  - https://github.com/llvm/llvm-project/issues/41896
+  - https://lore.kernel.org/llvm/20221125120750.3537134-2-lee@kernel.org/
+- [ppc boot failure](https://github.com/ClangBuiltLinux/linux/issues/1770)
+- [zero call used regs](https://github.com/ClangBuiltLinux/linux/issues/1766#issuecomment-1352013261) [llvm patch](https://reviews.llvm.org/D139679)
+- difficulties w/ randconfig testing due to CONFIG_DEBUG_INFO increasing build times
+  - perhaps we need a dedicated KCONFIG option for ALLYESCONFIG/ALLMODCONFIG or RANDCONFIG
+- kCFI
+  - [Rust interop](https://reviews.llvm.org/D139395)
+  - (sami) [kCFI seal](https://reviews.llvm.org/D138337)
+  - (Joao) [ibt-seal disabling w/ thinLTO](https://reviews.llvm.org/D140035)
+
 ## Nov 30, 2022
 
 - (Nathan) [Fix for `__thumb2__` warnings accepted](http://git.armlinux.org.uk/cgit/linux-arm.git/commit/?id=59e2cf8d21e05391c42628eb9fb5bb40f9d9698f)
