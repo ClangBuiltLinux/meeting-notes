@@ -6,6 +6,24 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Jan 11, 2023
+- (Nathan)
+  - [remove](https://lore.kernel.org/llvm/20221228-drop-qunused-arguments-v1-0-658cbc8fc592@kernel.org/) `-Qunused-arguments`
+  - [2022 ClangBuiltLinux Retrospective](https://nathanchance.dev/posts/2022-cbl-retrospective/)
+- (Sami) kCFI fixes
+  - [Set patchable-function-prefix for synthesized functions](https://reviews.llvm.org/D141172)
+  - [Set !kcfi_type metadata for indirectly called functions](https://reviews.llvm.org/D141444)
+- 15.0.7 release for `-fzero-call-used-regs` issue
+- (Nick)
+  - [asm goto w/ outputs along indirect edges](https://discourse.llvm.org/t/rfc-syncing-asm-goto-with-outputs-with-gcc/65453/8?u=nickdesaulniers)
+  - [report inlining decisions with -Wattribute-{warning|error}](https://reviews.llvm.org/D141451)
+  - profiling WG
+- (Bill) validating profile data from sampling
+- (Arnd)
+  - LKFT regressions reported
+  - [link not converging](https://lore.kernel.org/lkml/?q=error%3A+assignment+to+symbol+__init_end+does+not+converge) [repro](https://drive.google.com/file/d/1hqFiEY8rUesFH4pujeEyA1RH5uAZxI95/view?usp=sharing)
+- stable 4.9.y is EOL
+
 ## Dec 14, 2022
 - (Lee) AMDGPU driver disabled for non-32b targets
   - https://github.com/llvm/llvm-project/issues/41896
