@@ -21,7 +21,7 @@ Send to: llvm@lists.linux.dev
   - blog post [Bounded Flexible Arrays in C](https://people.kernel.org/kees/bounded-flexible-arrays-in-c)
   - [KSPP meeting now public](https://fosstodon.org/@kees/109745781202896756) - [see also](https://lore.kernel.org/linux-hardening/202301241110.DE9769A8@keescook)
 - LWN [article](https://lwn.net/Articles/919570/) about 4.9.y EOL
-- layoffs
+- [Who's hiring](https://discourse.llvm.org/t/ask-llvm-whos-hiring-jan-23/67894)
 - clang-16 branched
   - file todo about CI
 - (Arnd) [DebVM](https://salsa.debian.org/helmutg/debvm/)
