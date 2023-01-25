@@ -6,6 +6,26 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Jan 25, 2023
+- (Nick)
+  - yet another issue with `-fzero-call-used-regs`: https://reviews.llvm.org/D138757
+  - get [more aggressive](https://reviews.llvm.org/D111456) about inlining functions containing `__builtin_constant_p`
+    - CrOS' toolchain wrapper is setting `-fdebug-info-for-profiling`, which changes the behavior of inlining in non-obvious ways
+  - [blog post](https://nickdesaulniers.github.io/blog/2023/01/20/debugging-wframe-larger-than/) on debugging `-Wframe-larger-than=`
+    - converted by blog to hugo
+  - [Discussion](https://github.com/ClangBuiltLinux/linux/issues/1793) with HJL (GCC) about asm goto and endbr
+- (Nathan)
+  - [fix](https://android-review.git.corp.google.com/c/kernel/common/+/2395938) `-Wsingle-bit-bitfield-constant-conversion` is downstream Android Fuse driver
+  - [armv4 lld](https://github.com/ClangBuiltLinux/linux/issues/964#issuecomment-1387639749)
+- (Kees)
+  - blog post [Bounded Flexible Arrays in C](https://people.kernel.org/kees/bounded-flexible-arrays-in-c)
+  - [KSPP meeting now public](https://fosstodon.org/@kees/109745781202896756) - [see also](https://lore.kernel.org/linux-hardening/202301241110.DE9769A8@keescook)
+- LWN [article](https://lwn.net/Articles/919570/) about 4.9.y EOL
+- layoffs
+- clang-16 branched
+  - file todo about CI
+- (Arnd) [DebVM](https://salsa.debian.org/helmutg/debvm/)
+
 ## Jan 11, 2023
 - (Nathan)
   - [remove](https://lore.kernel.org/llvm/20221228-drop-qunused-arguments-v1-0-658cbc8fc592@kernel.org/) `-Qunused-arguments`
