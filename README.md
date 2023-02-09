@@ -8,7 +8,7 @@ Send to: llvm@lists.linux.dev
 
 ## Feb 8, 2023
 - (Bill) [randstruct fix](https://reviews.llvm.org/D143300) - [report](https://lore.kernel.org/llvm/20230208065133.220589-1-ebiggers@kernel.org/)
-- fosdem (2 clang built kernels)
+- FOSDEM (2 clang built kernels)
   - [Chimera Linux](https://www.phoronix.com/news/BSD-LLVM-Linux-Alpha-Coming) - 22:00 timestamp
   - [Fedora Asahi](https://www.phoronix.com/news/Fedora-Asahi-Remix-2023) - 13:13 timestamp
 - [fortify issue](https://github.com/ClangBuiltLinux/linux/issues/1687)
