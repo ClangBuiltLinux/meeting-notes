@@ -6,6 +6,16 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Feb 8, 2023
+- (Bill) [randstruct fix](https://reviews.llvm.org/D143300) - [report](https://lore.kernel.org/llvm/20230208065133.220589-1-ebiggers@kernel.org/)
+- FOSDEM (2 clang built kernels)
+  - [Chimera Linux](https://www.phoronix.com/news/BSD-LLVM-Linux-Alpha-Coming) - 22:00 timestamp
+  - [Fedora Asahi](https://www.phoronix.com/news/Fedora-Asahi-Remix-2023) - 13:13 timestamp
+- [fortify issue](https://github.com/ClangBuiltLinux/linux/issues/1687)
+- [boot failure report](https://github.com/ClangBuiltLinux/linux/issues/1800)
+- (Serge)[auto-init optimization](https://reviews.llvm.org/D137707)
+- [objtool memory reduction patch set](https://github.com/ClangBuiltLinux/linux/issues/1768#issuecomment-1423074854)
+
 ## Jan 25, 2023
 - (Nick)
   - yet another issue with `-fzero-call-used-regs`: https://reviews.llvm.org/D138757
