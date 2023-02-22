@@ -6,6 +6,23 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Feb 22, 2023
+- (Nick) [asm goto with outputs on indirect edges](https://github.com/llvm/llvm-project/issues/53562) landed in clang-17
+  - One bug report so far: https://github.com/llvm/llvm-project/issues/60855
+- (Nick) [KASAN + `CONFIG_FORTIFY_SOURCE=y` fix](https://reviews.llvm.org/D144057)
+- (Nathan) [`clang-16` in continuous integration](https://github.com/ClangBuiltLinux/continuous-integration2/pull/516)
+- (Nathan) [`CONFIG_PPC64_BIG_ENDIAN_ELF_ABI_V2` series](https://lore.kernel.org/20230118-ppc64-elfv2-llvm-v1-0-b9e2ec9da11d@kernel.org/)
+- [clang conditional tail call static call fixes](https://github.com/ClangBuiltLinux/linux/issues/1774) merged
+  - (Nathan) [backports for stable](https://lore.kernel.org/Y%2FUf9WUi%2FrANmOk8@dev-arch.thelio-3990X/)
+- RISC-V ISA extensions causing interop issues with binutils
+  - (Connor) [Recent issue reported on 5.10](https://github.com/ClangBuiltLinux/linux/issues/1808) (likely needs Linux fix)
+  - [Older issue](https://github.com/ClangBuiltLinux/linux/issues/1777) (getting fixed in LLVM/`ld.lld`)
+- [PowerPC `-mtune` issue](https://github.com/ClangBuiltLinux/linux/issues/1799)
+- (Nathan) Python utility updates using classes for better organization and flow, testing appreciated!
+  - [boot-utils](https://github.com/ClangBuiltLinux/boot-utils/pull/91)
+  - [tc-build](https://github.com/ClangBuiltLinux/tc-build/pull/226)
+- [Revisting caching in continuous integration](https://github.com/ClangBuiltLinux/continuous-integration2/issues/308#issuecomment-1440832707)
+
 ## Feb 8, 2023
 - (Bill) [randstruct fix](https://reviews.llvm.org/D143300) - [report](https://lore.kernel.org/llvm/20230208065133.220589-1-ebiggers@kernel.org/)
 - FOSDEM (2 clang built kernels)
