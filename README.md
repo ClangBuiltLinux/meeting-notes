@@ -6,6 +6,16 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Mar 8, 2023
+- (Nick) scaling down CI
+- (Nick/Bill) ["p" constraint](https://lore.kernel.org/lkml/20230303231133.1486085-1-eranian@google.com/)
+- (Conor) [riscv breakages due to extensions moving out of I spec](https://github.com/ClangBuiltLinux/linux/issues/1808)
+- [ICC support is gone](https://www.phoronix.com/news/Linux-6.3-Drops-Intel-ICC)
+- (Nathan) [ppc mtune flags](https://reviews.llvm.org/D144967)
+- ppc64 (BE) elfv2 testing possible now
+- [MIPS issue w/ `beqcz`](https://lore.kernel.org/llvm/20230225214500.7446-1-jiaxun.yang@flygoat.com/)
+- s390 and hexagon ioport support optional allmodconfig null ptr deref series being rebased
+
 ## Feb 22, 2023
 - (Nick) [asm goto with outputs on indirect edges](https://github.com/llvm/llvm-project/issues/53562) landed in clang-17
   - One bug report so far: https://github.com/llvm/llvm-project/issues/60855
