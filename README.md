@@ -6,6 +6,21 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Mar 22, 2023
+- (Nathan) PPC64 (BE) + LLD support
+  - additional issue related to CROSS_COMPILE being set to 32b target?
+- (Nathan) [boot-qemu](https://github.com/ClangBuiltLinux/boot-utils/pull/91) and [tc-build](https://github.com/ClangBuiltLinux/tc-build/pull/226) rewrites
+- (Nick) [improving backend diagnostics](https://discourse.llvm.org/t/rfc-improving-clangs-middle-and-back-end-diagnostics/69261)
+- (Nick) [`-Wfunction-fallthrough`](https://reviews.llvm.org/D146466)
+- (Bill) [s390 fortify issue](https://github.com/ClangBuiltLinux/linux/issues/1781)
+- [clang-16 officially released](https://discourse.llvm.org/t/llvm-16-0-0-release/69326)
+  - [android-4.14 boot regression](https://github.com/ClangBuiltLinux/linux/issues/1815)
+- (Nick) backend term issue https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=efbcbb12ee99f750c9f25c873b55ad774871de2a
+- Linus [asked](https://lore.kernel.org/all/CAHk-=whdrvCkSWh=BRrwZwNo3=yLBXXM88NGx8VEpP1VTgmkyQ@mail.gmail.com/) about maybe eliminating ARCH and CC and adding those to kconfg
+- (Kees) [call used regs paravirt case has come up again, now with GCC](https://git.kernel.org/pub/scm/linux/kernel/git/tip/tip.git/commit/?h=x86/paravirt&id=11af36cb898123fd4e0034f1bc6550aedcc87800)
+- (Nathan/Connor) [mixed toolchain riscv issue](https://github.com/ClangBuiltLinux/linux/issues/1808)
+- (Marco) [remove -g for kfence tests](https://github.com/ClangBuiltLinux/linux/issues/1816)
+
 ## Mar 8, 2023
 - (Nick) scaling down CI
 - (Nick/Bill) ["p" constraint](https://lore.kernel.org/lkml/20230303231133.1486085-1-eranian@google.com/)
