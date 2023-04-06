@@ -6,6 +6,21 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Apr 5, 2023
+
+- Tom working on cleaning up unused inline functions and unused but set variables ([archive](https://lore.kernel.org/llvm/?q=d%3A2023-03-22..2023-04-05+f%3Atrix%40redhat.com))
+- Nick continuing to investigate [LTO boot issue on android-4.14-stable](https://github.com/ClangBuiltLinux/linux/issues/1815)
+- [`ARCH=powerpc allmodconfig` in continuous-integration](https://github.com/ClangBuiltLinux/continuous-integration2/pull/536) (Nathan)
+- Stable versions of LLVM now on [kernel.org](https://mirrors.edge.kernel.org/pub/tools/llvm/) (Nathan)
+- MIPS positional parameter warning [fix](https://lore.kernel.org/20230404-mips-unused-named-parameters-v1-1-71d6c656f1de@kernel.org/) (Nathan)
+- [Adjust dependencies for dynamic ftrace for RISC-V ](https://lore.kernel.org/20230404-riscv-dynamic-ftrace-checks-clang-v1-1-0ce296b7d423@kernel.org/)(Nathan)
+- [5.10 backports](https://lore.kernel.org/20230328-riscv-zifencei-zicsr-5-10-v1-0-bccb3e16dc46@kernel.org/) for RISC-V `zifencei` and `zicsr` (Nathan)
+  - It appears LLVM has [no intention of matching binutils behavior around `zifencei` and `zicsr`](https://reviews.llvm.org/D147179).
+- [kexec regression with LLVM 16+](https://lore.kernel.org/20230321-kexec_clang16-v5-0-5563bf7c4173@chromium.org/) (mailing list not CC'd, found by browsing lore)
+- Masahiro looking to [remove `CROSS_COMPILE` determining `--target`](https://lore.kernel.org/20230401170117.1580840-1-masahiroy@kernel.org/)
+- RISC-V enabling ACPI, exposing old issue in Hisilicon crypto driver ([patch](https://lore.kernel.org/20230404182037.863533-24-sunilvl@ventanamicro.com/), [bug](https://github.com/ClangBuiltLinux/linux/issues/999))
+- Arnd looking into fixing `-Wmissing-prototypes` for ARM and x86
+
 ## Mar 22, 2023
 - (Nathan) PPC64 (BE) + LLD support
   - additional issue related to CROSS_COMPILE being set to 32b target?
