@@ -6,6 +6,27 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Apr 19, 2023
+- llvm 16.0.2 [released](https://github.com/llvm/llvm-project/releases/tag/llvmorg-16.0.2)
+  - Nathan [posted](https://lore.kernel.org/20230419180635.GA1965688@dev-arch.thelio-3990X/) builds to kernel.org
+- llvm [regression](https://github.com/ClangBuiltLinux/linux/issues/1833) related to shrink-wrapping backed out.
+- (Nick) Dealing with [fallout](https://github.com/ClangBuiltLinux/linux/issues/1815) from CHOP attack paper
+  - [add](https://lore.kernel.org/llvm/20230412-no_stackp-v2-0-116f9fe4bbe7@google.com/) no_stack_protector fn attr to kernel
+- (Nick) [improving](https://reviews.llvm.org/D141451) diagnostics for FORTIFY
+- (Jiaxun) MIPS [improvements](https://lore.kernel.org/llvm/20230414080701.15503-1-jiaxun.yang@flygoat.com/)
+- (Sami) [kCFI for RISCV](https://reviews.llvm.org/D148385)
+- (Fangrui) [update linker flags for RELR](https://lore.kernel.org/linux-kbuild/20230411200944.2591330-1-maskray@google.com/)
+- [clangd discussion](https://lore.kernel.org/llvm/20230414005309.GA2198310@google.com/)
+- plumbers planning starting
+  - Toolchain MC again, start thinking about ideas
+  - Nov 13-15 (Mon-Wed)
+  - Richmond, VA (Venue announced)
+  - clangbuiltlinux will be adjacent (maybe before, maybe)
+- __builtin_object_size changes planned for GCC, need similar changes for clang
+- (Arnd) build fails cross compiling 32b x86 targets for arm64 hosts in the samples/ directory
+  - Maybe a patch to test reverting
+- (Maxim) reworking notification of kernel+llvm testing
+
 ## Apr 5, 2023
 
 - Tom working on cleaning up unused inline functions and unused but set variables ([archive](https://lore.kernel.org/llvm/?q=d%3A2023-03-22..2023-04-05+f%3Atrix%40redhat.com))
