@@ -14,7 +14,7 @@ Send to: llvm@lists.linux.dev
 - (Bill) [element_count prototype](https://reviews.llvm.org/D148381)
 - (Bill) [CBL meetup](https://lore.kernel.org/llvm/CAGG=3QXHK2XhBBV0XwUok-Cop_+xJZtB_D1=qMS6HwWoKs8Hag@mail.gmail.com/) Nov 11 Saturday before Plumbers
 - x86 pie patches mention some issue with clang
-- KASAN stack option discussion
+- [KASAN stack option discussion](https://lore.kernel.org/all/96947fdc-835f-4bfa-b112-4ba9991cfe5f@app.fastmail.com/)
 - (Arnd) missing prototype W=1 fixes
   - [adobe/orc for validating debug info](https://github.com/adobe/orc)
 - [Sframe](https://lore.kernel.org/linux-toolchains/20230501200410.3973453-1-indu.bhagat@oracle.com/)
