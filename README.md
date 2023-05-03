@@ -6,6 +6,21 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## May 3, 2022
+- (Fangrui) [arm64 linker script fixup](https://lore.kernel.org/linux-arm-kernel/20230502074105.1541926-1-maskray@google.com/)
+- (Nathan) [PPC allmodconfig building!](https://github.com/ClangBuiltLinux/continuous-integration2/pull/562)
+- (Nick) [android-4.19 boot failure fix](https://reviews.llvm.org/D149191)
+- (Yonghong) [pahole fix for DW_ATE_unsigned_1024](https://lore.kernel.org/dwarves/20230426055030.3743074-1-yhs@fb.com/)
+- (Bill) [element_count prototype](https://reviews.llvm.org/D148381)
+- (Bill) [CBL meetup](https://lore.kernel.org/llvm/CAGG=3QXHK2XhBBV0XwUok-Cop_+xJZtB_D1=qMS6HwWoKs8Hag@mail.gmail.com/) Nov 11 Saturday before Plumbers
+- x86 pie patches mention some issue with clang
+- KASAN stack option discussion
+- (Arnd) missing prototype W=1 fixes
+  - [adobe/orc for validating debug info](https://github.com/adobe/orc)
+- [Sframe](https://lore.kernel.org/linux-toolchains/20230501200410.3973453-1-indu.bhagat@oracle.com/)
+  - will clang support be necessary?
+- [riscv assembler .option directive](https://reviews.llvm.org/D123515)
+
 ## Apr 19, 2023
 - llvm 16.0.2 [released](https://github.com/llvm/llvm-project/releases/tag/llvmorg-16.0.2)
   - Nathan [posted](https://lore.kernel.org/20230419180635.GA1965688@dev-arch.thelio-3990X/) builds to kernel.org
