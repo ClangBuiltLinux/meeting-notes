@@ -6,6 +6,35 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## May 17, 2022
+- (Yonghong, Song) LTO
+  - improvements in perf (ThinLTO only tested so far) webserver 0.3%
+  - Live patch
+    - issue with strings being promoted to globals, non-deterministic hash value
+    - Let's meet with Pete Swain
+- (Maksim) BOLT
+  - post-link optimizations
+  - good perf gains over LTO+PGO depends on the workload though
+  - kernel is booting in vm and now on hardware
+  - interesting perf workloads?
+  - not full optimizations enabled yet (safety) maybe only ~50%
+  - how is perf collected?
+  - test cases?
+  - a few unlikely/likely are wrong
+- Boot failures
+  - [android ARCH=arm](https://github.com/ClangBuiltLinux/linux/issues/1848)
+  - [next ARCH=i386](https://lore.kernel.org/linux-next/CA+G9fYvhPgoP57ip1cW5TaWJfkbkHA2SZqd5fFoTJ7rDGA138w@mail.gmail.com/)
+- PIE issues x86
+  - [No debug info for stack guard checks](https://github.com/llvm/llvm-project/issues/62480)
+  - x86 stack protector code references `@GOTPCREL` and `@PLT` even when built with `-fno-pic` or `-fno-pie`.
+    - https://github.com/llvm/llvm-project/issues/62481 
+    - https://github.com/llvm/llvm-project/issues/60116 
+  - [inefficient segment register relative access](https://github.com/llvm/llvm-project/issues/62482)
+  - [Inline asm P output template](https://github.com/llvm/llvm-project/issues/60096)
+- (Arnd) 140 patches sent for fixing missing prototypes
+- (Fangrui) SFrame
+
+
 ## May 3, 2022
 - (Fangrui) [arm64 linker script fixup](https://lore.kernel.org/linux-arm-kernel/20230502074105.1541926-1-maskray@google.com/)
 - (Nathan) [PPC allmodconfig building!](https://github.com/ClangBuiltLinux/continuous-integration2/pull/562)
