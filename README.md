@@ -6,6 +6,22 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## May 31, 2022
+- (Anders) QEMU 7.2 regression?
+  - https://lore.kernel.org/lkml/f0194cbe-eb5b-40ee-8723-1927ebddefc1@app.fastmail.com/
+- `-Wstrict-flex-arrays=3`
+  - https://github.com/ClangBuiltLinux/linux/issues/1858
+  - https://github.com/ClangBuiltLinux/linux/issues/1851
+- `-Wbuiltin-macro-redefined`
+  - https://github.com/ClangBuiltLinux/linux/issues/1855
+  - https://reviews.llvm.org/D151741
+- arm64be vdso https://github.com/ClangBuiltLinux/linux/issues/1859
+- stack protector issue https://github.com/ClangBuiltLinux/linux/issues/1854
+- (Nathan) rewrite boot-utils to DL initrd images
+- LLVM meetup planning before plumbers
+- [US LLVM dev conf announced](https://discourse.llvm.org/t/save-the-date-for-the-2023-us-llvm-developers-meeting/70848) 
+
+
 ## May 17, 2022
 - (Yonghong, Song) LTO
   - improvements in perf (ThinLTO only tested so far) webserver 0.3%
