@@ -6,6 +6,19 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Jun 14, 2023
+- [Group diagnostics & specificity differences](https://github.com/llvm/llvm-project/issues/63315)
+- (Nathan) "kbuild: Update assembler calls to use proper flags and language target" [backports](https://lore.kernel.org/stable/20230612-6-1-asssembler-target-llvm-17-v1-0-75605d553401@kernel.org/)
+- (Nathan) `-Wunused-variable` and `__attribute__((cleanup()))` [fix](https://reviews.llvm.org/D152180)
+- (Nathan) [boot-utils images moved to GH releases](https://github.com/ClangBuiltLinux/continuous-integration2/pull/577)
+- [ftrace disabled for 32b ppc](https://lore.kernel.org/llvm/20230609034501.407971-1-naveen@kernel.org/)
+- riscv MEDLOW
+  - disable for COMPILE_TEST?
+    - CONFIG_ARM_MODULE_PLTS might do something similar
+- [s390 series](https://git.kernel.org/pub/scm/linux/kernel/git/niks/linux.git/log/?h=has_ioport_v5)
+- [ppc allmod stack frame - due to sanitizers?](https://lore.kernel.org/all/202306131418.35B5D649DC@keescook/)
+- (Arnd) [lots of W=1 warning fixes](https://pastebin.com/yGRqEE8p)
+
 ## May 31, 2022
 - (Anders) QEMU 7.2 regression?
   - https://lore.kernel.org/lkml/f0194cbe-eb5b-40ee-8723-1927ebddefc1@app.fastmail.com/
