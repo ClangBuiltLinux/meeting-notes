@@ -17,6 +17,7 @@ Send to: llvm@lists.linux.dev
     - CONFIG_ARM_MODULE_PLTS might do something similar
 - [s390 series](https://git.kernel.org/pub/scm/linux/kernel/git/niks/linux.git/log/?h=has_ioport_v5)
 - [ppc allmod stack frame - due to sanitizers?](https://lore.kernel.org/all/202306131418.35B5D649DC@keescook/)
+- (Arnd) [lots of W=1 warning fixes](https://pastebin.com/yGRqEE8p)
 
 ## May 31, 2022
 - (Anders) QEMU 7.2 regression?
