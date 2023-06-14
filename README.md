@@ -19,7 +19,7 @@ Send to: llvm@lists.linux.dev
 - [ppc allmod stack frame - due to sanitizers?](https://lore.kernel.org/all/202306131418.35B5D649DC@keescook/)
 - (Arnd) [lots of W=1 warning fixes](https://pastebin.com/yGRqEE8p)
 
-## May 31, 2022
+## May 31, 2023
 - (Anders) QEMU 7.2 regression?
   - https://lore.kernel.org/lkml/f0194cbe-eb5b-40ee-8723-1927ebddefc1@app.fastmail.com/
 - `-Wstrict-flex-arrays=3`
@@ -35,7 +35,7 @@ Send to: llvm@lists.linux.dev
 - [US LLVM dev conf announced](https://discourse.llvm.org/t/save-the-date-for-the-2023-us-llvm-developers-meeting/70848) 
 
 
-## May 17, 2022
+## May 17, 2023
 - (Yonghong, Song) LTO
   - improvements in perf (ThinLTO only tested so far) webserver 0.3%
   - Live patch
@@ -64,7 +64,7 @@ Send to: llvm@lists.linux.dev
 - (Fangrui) SFrame
 
 
-## May 3, 2022
+## May 3, 2023
 - (Fangrui) [arm64 linker script fixup](https://lore.kernel.org/linux-arm-kernel/20230502074105.1541926-1-maskray@google.com/)
 - (Nathan) [PPC allmodconfig building!](https://github.com/ClangBuiltLinux/continuous-integration2/pull/562)
 - (Nick) [android-4.19 boot failure fix](https://reviews.llvm.org/D149191)
