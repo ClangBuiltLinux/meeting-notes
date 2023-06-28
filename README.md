@@ -6,6 +6,21 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Jun 28, 2023
+
+- [CFP for Toolchains Track at Linux Plumbers 2023](https://lore.kernel.org/llvm/CAKwvOdk6VP4ejRJk_+Q_Smj_=Ly0dd8nyAiXJb+w18y6VJb7YQ@mail.gmail.com/)
+- [ClangBuiltLinux meetup 2023](https://clangbuiltlinux.github.io/meetup.html)
+- [RISC-V ld.lld dead code elimination performance regression](https://github.com/ClangBuiltLinux/linux/issues/1881)
+- [Continued fallout from `clang` changing certain options to be target specific](https://github.com/ClangBuiltLinux/linux/issues/1878)
+- s390 link error in decompressor ([issue](https://github.com/ClangBuiltLinux/linux/issues/1747), [patch](https://lore.kernel.org/20230622125508.1068457-1-hca@linux.ibm.com/))
+- LoongArch building with certain configurations disabled as of `next-20230628`
+  - [tracking issue](https://github.com/ClangBuiltLinux/linux/issues/1787)
+  - [initial Linux support](https://lore.kernel.org/20230625095644.3156349-1-kernel@xen0n.name/)
+  - [cross compile fixes](https://lore.kernel.org/20230627130122.1491765-1-kernel@xen0n.name/)
+  - [boot-utils support](https://github.com/ClangBuiltLinux/boot-utils/pull/109)
+- Further discussion around [Apple's `-fbounds-safety` LLVM proposal](https://discourse.llvm.org/t/rfc-enforcing-bounds-safety-in-c-fbounds-safety/70854/72)
+  - Proposed competing `__element_count__` attribute [merged for 6.5-rc1](https://git.kernel.org/linus/dd06e72e68bcb4070ef211be100d2896e236c8fb)
+
 ## Jun 14, 2023
 - [Group diagnostics & specificity differences](https://github.com/llvm/llvm-project/issues/63315)
 - (Nathan) "kbuild: Update assembler calls to use proper flags and language target" [backports](https://lore.kernel.org/stable/20230612-6-1-asssembler-target-llvm-17-v1-0-75605d553401@kernel.org/)
