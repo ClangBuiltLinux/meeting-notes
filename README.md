@@ -18,6 +18,7 @@ Send to: llvm@lists.linux.dev
 - (Space) working on moving syzbot builds to LLVM=1
 - (Yonghong) [fix](https://lore.kernel.org/lkml/20230628181926.4102448-1-yhs@fb.com/) for livepatch + LTO
 - [EuroLLVM videos being posted](https://www.youtube.com/playlist?list=PL_R5A0lGi1AD-bqRaY61l5Q-EozbfyLZr)
+  - [2023 EuroLLVM - Optimizing the Linux Kernel with LLVM BOLT](https://youtu.be/ivTCCTSMGZg)
 
 ## Jun 28, 2023
 
