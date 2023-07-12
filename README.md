@@ -6,6 +6,19 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Jul 12, 2023
+- `--gc-sections` [for RISCV](https://github.com/ClangBuiltLinux/linux/issues/1881)
+  - no update 
+- Loongarch [support for LLD is close](https://reviews.llvm.org/D138135) and necessary to start kernel builds with LLVM=1
+- `-fstrict-flex-arrays=3` triggering `-Warray-bounds` in SCSI code in [mainline](https://github.com/ClangBuiltLinux/linux/issues/1851)
+  - Arnd's [fix accepted](https://git.kernel.org/pub/scm/linux/kernel/git/jejb/scsi.git/commit/?id=47699a2b63caaa0de4841d4402627c2fdf3452a6)
+  - James Bottomley confirms in private email thread that PR will be sent Friday-ish
+- (Nathan) PPC64 (BE) now building with [LLVM=1](https://github.com/ClangBuiltLinux/continuous-integration2/pull/593)
+- (Sami) [kCFI for RISCV](https://lore.kernel.org/lkml/20230710183544.999540-8-samitolvanen@google.com/)
+- (Space) working on moving syzbot builds to LLVM=1
+- (Yonghong) [fix](https://lore.kernel.org/lkml/20230628181926.4102448-1-yhs@fb.com/) for livepatch + LTO
+- [EuroLLVM videos being posted](https://www.youtube.com/playlist?list=PL_R5A0lGi1AD-bqRaY61l5Q-EozbfyLZr)
+
 ## Jun 28, 2023
 
 - [CFP for Toolchains Track at Linux Plumbers 2023](https://lore.kernel.org/llvm/CAKwvOdk6VP4ejRJk_+Q_Smj_=Ly0dd8nyAiXJb+w18y6VJb7YQ@mail.gmail.com/)
