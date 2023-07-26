@@ -6,6 +6,19 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Jul 26, 2023
+- [asm goto error diagnostic fixed](https://github.com/ClangBuiltLinux/linux/issues/1886)
+- [improving constant expression evaluation](https://github.com/ClangBuiltLinux/linux/issues/1889)
+- [perf LTO](https://lore.kernel.org/llvm/20230724201247.748146-1-irogers@google.com/)
+- LoongArch LLD support landed in clang-17
+  - tuxmake work for CI; hexagon prior-art?
+- [qemu x86 tcg issue](https://github.com/ClangBuiltLinux/boot-utils/issues/111)
+- [powerpc missing instruction](https://github.com/ClangBuiltLinux/linux/issues/1891)
+- Discussion around promoting W=1 warnings to always on, even if some architectures have lingering instances
+- release/17.x branched
+- [`-fbounds-safety` video published](https://youtu.be/RK9bfrsMdAM)
+- [KASAN + LTO fixes](https://github.com/ClangBuiltLinux/linux/issues/1721)
+
 ## Jul 12, 2023
 - `--gc-sections` [for RISCV](https://github.com/ClangBuiltLinux/linux/issues/1881)
   - no update 
