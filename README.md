@@ -6,6 +6,17 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Oct 18, 2023
+- [arm64 boot failure](https://github.com/ClangBuiltLinux/linux/issues/1946)
+  - looking like a compiler bug
+- bug scrub last week
+- llvm dev conf last week
+  - discussions around stack usage, `-fbounds-safety`
+- [riscv LTO](https://github.com/ClangBuiltLinux/linux/issues/1942) has an issue with LLD not respecting relaxation
+- header refactoring
+  - circular includes
+- (Nick) inline asm "rm" work
+
 ## Jul 26, 2023
 - [asm goto error diagnostic fixed](https://github.com/ClangBuiltLinux/linux/issues/1886)
 - [improving constant expression evaluation](https://github.com/ClangBuiltLinux/linux/issues/1889)
