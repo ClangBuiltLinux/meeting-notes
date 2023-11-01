@@ -6,6 +6,21 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Nov 1, 2023
+- (Maxim) [Protecting Compiler Optimizations with Linaro Benchmarking CI](https://www.youtube.com/live/ydAOVJqeL5o?si=sO7gCJb9vxJ1LwLh)
+- bcachefs -Wframe-larger-than 32b arm [report from linaro](https://lore.kernel.org/llvm/1310397379.52558.1698849730427@jenkins.jenkins/)
+- (Nathan) -Wsometimes-uninitialized in bcachefs
+- (Nathan) -Wc23-extensions [in mainline](https://github.com/ClangBuiltLinux/linux/issues/1953) due to ~3 days in -next
+- (Nathan) [loongarch breakage](https://github.com/ClangBuiltLinux/linux/issues/1955)
+- (Bill) `__attribute__((counted_by()))` has landed, Bill working on fixups
+  - GCC folks mentioned potential data dependency issues
+- (Mark) LTO and ARM64 discussion on IRC about the use of ALTERNATIVES in READ_ONCE
+  - acceptable to remove upgrading to rcpc when available?
+- Has the Itanium sunk?
+- (Nick) distracted with "rm"
+- (Tom) llvm-17 release
+- (Nathan) 17.0.4 binaries on kernel.org
+
 ## Oct 18, 2023
 - [arm64 boot failure](https://github.com/ClangBuiltLinux/linux/issues/1946)
   - looking like a compiler bug
