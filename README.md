@@ -6,6 +6,18 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Nov 29, 2023
+- [RISC-V linker failure around `R_RISCV_{SET,SUB}_ULEB128`](https://github.com/ClangBuiltLinux/linux/issues/1961)
+- [LoongArch `CONFIG_RELOCATABLE` fix](https://lore.kernel.org/20231124035534.70432-1-wangrui@loongson.cn/)
+- (Nathan) `__muloti4` generation issue
+  - [Issue](https://github.com/ClangBuiltLinux/linux/issues/1958)
+  - [Workaround patch](https://lore.kernel.org/20231128-avoid-muloti4-grow_buffers-v1-1-bc3d0f0ec483@kernel.org/)
+- (Nathan) LLVM 17.0.6 released and [uploaded to kernel.org](https://lore.kernel.org/20231128194910.GA3062541@dev-arch.thelio-3990X/) (last 17.x release for the time being)
+- (Justin) Continuous integration v3
+- (Nick) Work on `rm` constraints
+- (Bill) Work on `__counted_by`
+- [Plumbers videos live](https://www.youtube.com/playlist?list=PLVsQ_xZBEyN0rGt1cmVhPn_TG79YfS_gX)
+
 ## Nov 1, 2023
 - (Maxim) [Protecting Compiler Optimizations with Linaro Benchmarking CI](https://www.youtube.com/live/ydAOVJqeL5o?si=sO7gCJb9vxJ1LwLh)
 - bcachefs -Wframe-larger-than 32b arm [report from linaro](https://lore.kernel.org/llvm/1310397379.52558.1698849730427@jenkins.jenkins/)
