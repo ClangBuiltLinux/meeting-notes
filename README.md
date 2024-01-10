@@ -6,6 +6,15 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Jan 10, 2024
+- (Fangrui) RISC-V LLVM main boot regression ([issue](https://github.com/ClangBuiltLinux/linux/issues/1965), [fix](https://github.com/llvm/llvm-project/commit/6c207ee5d20d2b054509123e6d0507df1332b376))
+- (Justin) [Continuous integration caching](https://github.com/ClangBuiltLinux/continuous-integration2/pull/664)
+- (Nathan) RFC for bumping minimum supported version to 13.0.1 ([mailing list](https://lore.kernel.org/20240110165339.GA3105@dev-arch.thelio-3990X/), [GitHub](https://github.com/ClangBuiltLinux/linux/issues/1975))
+- LoongArch can now build without any disabled configurations with LLVM main because [`__attribute__((model("extreme")))` is now supported in `clang`](https://github.com/llvm/llvm-project/commit/4df566290751403f470fea3b27aa148ab1ddf144)
+- [New fortify warning in `fs/smb/client/cifsencrypt.c`](https://github.com/ClangBuiltLinux/linux/issues/1966)
+- [New instance of `-Wenum-enum-conversion` in `# drivers/gpu/drm/amd/display/dc/link/protocols/link_dp_dpia_bw.c`](https://github.com/ClangBuiltLinux/linux/issues/1976) in -next ([fix](https://lore.kernel.org/20240110-amdgpu-display-enum-enum-conversion-v1-1-953ae94fe15e@kernel.org/))
+- `release/18.x` is scheduled to be created in two weeks, get changes landed ASAP targetting `clang-18`
+
 ## Nov 29, 2023
 - [RISC-V linker failure around `R_RISCV_{SET,SUB}_ULEB128`](https://github.com/ClangBuiltLinux/linux/issues/1961)
 - [LoongArch `CONFIG_RELOCATABLE` fix](https://lore.kernel.org/20231124035534.70432-1-wangrui@loongson.cn/)
