@@ -6,6 +6,18 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Jan 24, 2024
+- (Nathan) UML breakage with `clang-18`
+  - [Issue 1](https://github.com/ClangBuiltLinux/linux/issues/1981), [Issue 2](https://github.com/ClangBuiltLinux/linux/issues/1982)
+  - [Fixes](https://lore.kernel.org/20240123-fix-uml-clang-18-v1-0-efc095519cf9@kernel.org/)
+- [s390 `ld.lld` support](https://github.com/llvm/llvm-project/pull/75643)
+- (Nathan, Justin) Tree updates in continuous-integration ([drop 4.14](https://github.com/ClangBuiltLinux/continuous-integration2/commit/6fbc9a2ef8950499a1496d08b5b2e23b11666ead), [add new ChromeOS branches](https://github.com/ClangBuiltLinux/continuous-integration2/commit/5a71921bc040a2c5d1bfcb1e47efbfcf853ec87e))
+- [RISC-V LTO accepted](https://git.kernel.org/riscv/c/021d23428bdbae032294e8f4a29cb53cb50ae71c)
+- LLVM tip of tree is now 19, `release/18.x` branched
+  - [Announcement](https://discourse.llvm.org/t/release-18-x-branch-has-been-created/76480)
+  - [Release schedule](https://discourse.llvm.org/t/llvm-18-release-schedule/76175)
+  - [CI game plan](https://github.com/ClangBuiltLinux/continuous-integration2/issues/686)
+
 ## Jan 10, 2024
 - (Fangrui) RISC-V LLVM main boot regression ([issue](https://github.com/ClangBuiltLinux/linux/issues/1965), [fix](https://github.com/llvm/llvm-project/commit/6c207ee5d20d2b054509123e6d0507df1332b376))
 - (Justin) [Continuous integration caching](https://github.com/ClangBuiltLinux/continuous-integration2/pull/664)
