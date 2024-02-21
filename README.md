@@ -6,6 +6,23 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Feb 21, 2024
+
+- SystemZ support for [`ld.lld`](https://github.com/llvm/llvm-project/commit/fe3406e349884e4ef61480dd0607f1e237102c74) and [`llvm-objcopy`](https://github.com/llvm/llvm-project/commit/3c02cb7492fc78fb678264cebf57ff88e478e14f) landed in `main` and `release/18.x`
+- (Nathan) Kernel side changes for full `ARCH=s390 LLVM=1` support landed
+  - https://github.com/ClangBuiltLinux/linux/issues/859
+  - https://github.com/ClangBuiltLinux/linux/issues/1991
+  - https://github.com/ClangBuiltLinux/linux/issues/1992
+  - https://github.com/ClangBuiltLinux/linux/issues/1993
+  - https://github.com/ClangBuiltLinux/linux/issues/1994
+  - https://github.com/ClangBuiltLinux/linux/issues/1995
+  - https://github.com/ClangBuiltLinux/linux/issues/1996
+- LLVM 18.1.0-rc2 and LLVM 18.1.0-rc3 released and uploaded to kernel.org for testing
+  - https://lore.kernel.org/20240208002841.GA2601476@dev-arch.thelio-3990X/
+  - https://lore.kernel.org/20240221193642.GA2138843@dev-arch.thelio-3990X/
+- (Arnd) [Fixes for `-Wcast-function-type-strict`](https://lore.kernel.org/llvm/?q=f%3Aarnd%40kernel.org+Wcast-function-type-strict)
+- [`CONFIG_LD_DEAD_CODE_DATA_ELIMINATION` support for `ARCH=arm`](https://lore.kernel.org/20240220081527.23408-1-liuyuntao12@huawei.com/) (currently [broken for `ld.lld`](https://lore.kernel.org/30b01c65-12f2-4ee0-81d5-c7a2da2c36b4@app.fastmail.com/))
+
 ## Jan 24, 2024
 - (Nathan) UML breakage with `clang-18`
   - [Issue 1](https://github.com/ClangBuiltLinux/linux/issues/1981), [Issue 2](https://github.com/ClangBuiltLinux/linux/issues/1982)
