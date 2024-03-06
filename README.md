@@ -6,6 +6,17 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Mar 6, 2024
+
+- [LLVM 18.1.0 released](https://discourse.llvm.org/t/llvm-18-1-0-released/77448) (kernel.org build WIP)
+- Started using [kernel.org LLVM toolchains](https://mirrors.edge.kernel.org/pub/tools/llvm/) in continuous integration ([pull request](https://github.com/ClangBuiltLinux/continuous-integration2/pull/719))
+- `-Wenum-enum-conversion` and `-Wenum-compare-conditional`
+  - [issue tracker](https://github.com/ClangBuiltLinux/linux/issues/2002)
+  - [patch to move warnings to `W=1`](https://lore.kernel.org/20240305-disable-extra-clang-enum-warnings-v2-1-ba529ec15f95@kernel.org/)
+  - instances need investigation to see if real bugs or not
+- Initial [series for `ARCH=arm CONFIG_CFI_CLANG=y`](https://lore.kernel.org/20240225-arm32-cfi-v1-0-6943306f065b@linaro.org/) posted
+- (Tom) Hitting build failure when upgrading from LLVM 17 to 18 in Fedora, will file issue for further investigation
+
 ## Feb 21, 2024
 
 - SystemZ support for [`ld.lld`](https://github.com/llvm/llvm-project/commit/fe3406e349884e4ef61480dd0607f1e237102c74) and [`llvm-objcopy`](https://github.com/llvm/llvm-project/commit/3c02cb7492fc78fb678264cebf57ff88e478e14f) landed in `main` and `release/18.x`
