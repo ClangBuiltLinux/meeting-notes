@@ -6,6 +6,14 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Mar 20, 2024
+
+- LLVM 18.1.1 and 18.1.2 released and uploaded to kernel.org
+- Fedora build issue resolved: https://github.com/ClangBuiltLinux/linux/issues/2006
+- `__bad_copy_from()` not eliminated with `CONFIG_KCSAN`: https://github.com/ClangBuiltLinux/linux/issues/2007
+- Short mainline regression with `-Wstring-compare` in `__assign_str()` tracing macro: https://lore.kernel.org/CAHk-=wjxX16kWd=uxG5wzqt=aXoYDf1BgWOKk+qVmAO0zh7sjA@mail.gmail.com/
+- Discussion from KernelCI around compiler versions: https://lore.kernel.org/42c7f5a3e07c274c2a9d2e45a973c6306b2ba74f.camel@collabora.com/
+
 ## Mar 6, 2024
 
 - [LLVM 18.1.0 released](https://discourse.llvm.org/t/llvm-18-1-0-released/77448) (kernel.org build WIP)
