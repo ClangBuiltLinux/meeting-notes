@@ -6,6 +6,15 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Apr 03, 2024
+
+- (Nathan) Workaround [sent](https://lore.kernel.org/llvm/20240401-bluetooth-fix-len-type-getsockopt_old-v1-1-c6b5448b5374@kernel.org/) and [accepted](https://git.kernel.org/bluetooth/bluetooth-next/c/7d80e7ebf9e333dc5463a48a914f55caef15f62f) for `__bad_copy_from()` error
+- Warning and compiler crash when attempting to enable `CONFIG_USE_X86_SEG_SUPPORT`: https://github.com/ClangBuiltLinux/linux/issues/2013
+- (Nathan) `__typeof_unqual__`: https://github.com/llvm/llvm-project/pull/87392
+- (Arnd) Turning on more warnings/groups
+  - [`-Wextra`](https://lore.kernel.org/20240326144741.3094687-1-arnd@kernel.org/)
+  - [`-Wtautological-constant-out-of-range-compare`](https://lore.kernel.org/20240328143051.1069575-1-arnd@kernel.org/)
+
 ## Mar 20, 2024
 
 - LLVM 18.1.1 and 18.1.2 released and uploaded to kernel.org
