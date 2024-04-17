@@ -6,6 +6,14 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Apr 17, 2024
+
+- (Arnd) More warnings on by default [in -next](https://git.kernel.org/next/linux-next/l/5382ed7c1ebb122745bc0c8e9484bf48667c9238), watch for regressions
+- KernelCI and others working on building kselftests with clang
+- LoongArch folks resolved [recent `-Wframe-larger-than` instance](https://github.com/ClangBuiltLinux/linux/issues/2014)
+- [v6](https://lore.kernel.org/20240417-arm32-cfi-v6-0-6486385eb136@linaro.org/) of kCFI for `ARCH=arm`
+- (Nathan) Investigating recently reported [kexec regression](https://github.com/ClangBuiltLinux/linux/issues/2016)
+
 ## Apr 03, 2024
 
 - (Nathan) Workaround [sent](https://lore.kernel.org/llvm/20240401-bluetooth-fix-len-type-getsockopt_old-v1-1-c6b5448b5374@kernel.org/) and [accepted](https://git.kernel.org/bluetooth/bluetooth-next/c/7d80e7ebf9e333dc5463a48a914f55caef15f62f) for `__bad_copy_from()` error
