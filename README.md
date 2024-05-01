@@ -6,6 +6,14 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## May 01, 2024
+
+- [kexec regression](https://github.com/ClangBuiltLinux/linux/issues/2016) now [fixed in -next](https://git.kernel.org/tip/cba786af84a0f9716204e09f518ce3b7ada8555e)
+- UBSAN handlers do not respect `-mregparm=3` ([KSPP issue](https://github.com/KSPP/linux/issues/350), [upstream LLVM issue](https://github.com/llvm/llvm-project/issues/89670), [proposed fix](https://github.com/llvm/llvm-project/pull/89707))
+- kCFI for `ARCH=arm` [merged](https://lore.kernel.org/Zi+e9M%2Ff5b%2FSto9H@shell.armlinux.org.uk/) (and should be in -next shortly)
+- More work on building kselftests with clang
+- Discussion around adding a label for issues or changes that impact the Linux kernel on the upstream LLVM issue tracker
+
 ## Apr 17, 2024
 
 - (Arnd) More warnings on by default [in -next](https://git.kernel.org/next/linux-next/l/5382ed7c1ebb122745bc0c8e9484bf48667c9238), watch for regressions
