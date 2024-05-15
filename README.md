@@ -6,6 +6,15 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## May 15, 2024
+
+- Support for ThinLTO caching [removed](https://lore.kernel.org/llvm/20240501-kbuild-llvm-drop-thinlto-cache-v1-1-c117cc50a24b@kernel.org/) due to bug with `.incbin`
+- Prebuilt LLVM 18.1.5 [uploaded to kernel.org](https://lore.kernel.org/llvm/20240502152416.GA3178126@dev-arch.thelio-3990X/)
+- Series to clean up `-Wcast-function-type-strict` for s390 [submitted](https://lore.kernel.org/llvm/20240506194454.1160315-1-hca@linux.ibm.com/)
+- [Kees's proposal](https://lore.kernel.org/llvm/202404291502.612E0A10@keescook/) for helping to mitigate integer overflow generated a lot of discussion
+- (Justin) [Fixes for signed integer overflows](https://lore.kernel.org/llvm/?q=f%3Ajustinstitt%40google.com+overflow), maintainers are generally not impressed
+- John Hubbard sent more fixes for kselftest issues, more people are starting to pick up clang and work on fixing the selftests build
+
 ## May 01, 2024
 
 - [kexec regression](https://github.com/ClangBuiltLinux/linux/issues/2016) now [fixed in -next](https://git.kernel.org/tip/cba786af84a0f9716204e09f518ce3b7ada8555e)
