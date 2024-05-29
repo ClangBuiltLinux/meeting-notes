@@ -6,6 +6,14 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## May 29, 2024
+
+- Prebuilt LLVM 18.1.6 [uploaded to kernel.org](https://lore.kernel.org/llvm/20240520153939.GA1166124@thelio-3990X/) (last planned update for 18.x)
+- (Nathan) Fix for warning when linking LoongArch `vmlinuz.efi` ([issue](https://github.com/ClangBuiltLinux/linux/issues/2023), [patch](https://lore.kernel.org/llvm/20240522-efi-zboot-lds-add-discard-sections-to-discard-v1-1-6b415efa0f85@kernel.org/))
+- (Nathan) Investigating build time performance regression with Hexagon that was allegedly fixed but seems to appear with another translation unit
+- John Hubbard sent new round of fixes for selftests build
+- (Gatlin) [UBSAN traps for x86](https://lore.kernel.org/llvm/20240529022043.3661757-1-gatlin.newhouse@gmail.com/)
+
 ## May 15, 2024
 
 - Support for ThinLTO caching [removed](https://lore.kernel.org/llvm/20240501-kbuild-llvm-drop-thinlto-cache-v1-1-c117cc50a24b@kernel.org/) due to bug with `.incbin`
