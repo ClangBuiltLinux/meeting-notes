@@ -6,6 +6,12 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Jun 12, 2024
+
+- Prebuilt LLVM 18.1.7 [uploaded to kernel.org](https://lore.kernel.org/llvm/20240610180317.GA810381@thelio-3990X), should be the last 18.x update for real ;)
+- CFP for Linux Plumbers Conference Toolchains Track is approaching (June 16, 2024) [[mailing list announcement/info](https://lore.kernel.org/llvm/20240611213114.GA1803083@thelio-3990X/)]
+- (Nathan) Work on fixing up compile errors from `__counted_by` on flexible arrays with elements that contain flexible arrays (recent Clang 19 regression)
+
 ## May 29, 2024
 
 - Prebuilt LLVM 18.1.6 [uploaded to kernel.org](https://lore.kernel.org/llvm/20240520153939.GA1166124@thelio-3990X/) (last planned update for 18.x)
