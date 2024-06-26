@@ -6,6 +6,13 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Jun 26, 2024
+
+- Prebuilt LLVM 18.1.8 [uploaded to kernel.org](https://lore.kernel.org/llvm/20240621155610.GA3794848@thelio-3990X/), I'll stop claiming it will be the last release at this point ;)
+- [Issue raised](https://github.com/ClangBuiltLinux/linux/issues/2033) around union initialization with braces when first member is smaller than the largest member
+- Crash with `pahole 1.27` [reported](https://lore.kernel.org/llvm/20240613214019.GA1423015@thelio-3990X/) and addressed in master (no release yet)
+- Initial patch for building `ARCH=sparc` with `clang` [submitted for review](https://lore.kernel.org/20240620-sparc-cflags-v1-1-bba7d0ff7d42@protonmail.com/)
+
 ## Jun 12, 2024
 
 - Prebuilt LLVM 18.1.7 [uploaded to kernel.org](https://lore.kernel.org/llvm/20240610180317.GA810381@thelio-3990X), should be the last 18.x update for real ;)
