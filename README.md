@@ -6,6 +6,18 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Sep 4, 2024
+
+- (Nathan) Prebuilt LLVM 19.1.0-rc4 [uploaded to kernel.org](https://lore.kernel.org/20240903195128.GA2607877@thelio-3990X/)
+- (Nathan) Chasing fallout from [```[FunctionAttrs] deduce attr `cold` on functions if all CG paths call a `cold` function```](https://github.com/llvm/llvm-project/commit/6b11573b8c5e3d36beee099dbe7347c2a007bf53)
+  - [ARM: imx: Annotate imx7d_enet_init() as __init](https://lore.kernel.org/20240822-imx7d-mark-imx7d_enet_init-as-init-v1-1-8dfadee3bed4@kernel.org/)
+  - [x86/resctrl: Annotate __get_mem_config_intel() as __init](https://lore.kernel.org/20240822-x86-restctrl-get_mem_config_intel-init-v1-1-8b0a68a8731a@kernel.org/)
+  - [x86/cpu_entry_area: Annotate percpu_setup_exception_stacks() as __init](https://lore.kernel.org/20240822-x86-percpu_setup_exception_stacks-init-v1-1-57c5921b8209@kernel.org/)
+  - [Apply dbaee836d60a8 to linux-5.10.y](https://lore.kernel.org/20240827222159.GA2737082@thelio-3990X/)
+- (Nathan) Fixing or reporting various warnings in -next
+- [Fortify warning in drivers/net/ethernet/intel/igc/igc_ethtool.c](https://lore.kernel.org/20240902-igc-ss-puts-v1-1-c66a73b532c7@kernel.org/) (appears correct, should result in a GCC PR)
+
+
 ## Jun 26, 2024
 
 - Prebuilt LLVM 18.1.8 [uploaded to kernel.org](https://lore.kernel.org/llvm/20240621155610.GA3794848@thelio-3990X/), I'll stop claiming it will be the last release at this point ;)
