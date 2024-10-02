@@ -6,6 +6,14 @@ invite and meet link.
 
 Send to: llvm@lists.linux.dev
 
+## Oct 2, 2024
+
+- (Nathan) Catching up with problems that showed up in -next on test machines and chasing other regressions in CI
+- (Nathan) Reviewing and testing Source-based Code Coverage series ([v2](https://lore.kernel.org/20240905043245.1389509-1-wentaoz5@illinois.edu/))
+- Discussion around integrating AutoFDO, Propeller, and BOLT
+- (Keith) Working on per-task stack canary support in Clang for [RISC-V](https://github.com/llvm/llvm-project/pull/108942) and ppc64 (soon)
+- (Tom) Fedora hitting issues with pahole when using LTO with Rust
+
 ## Sep 4, 2024
 
 - (Nathan) Prebuilt LLVM 19.1.0-rc4 [uploaded to kernel.org](https://lore.kernel.org/20240903195128.GA2607877@thelio-3990X/)
